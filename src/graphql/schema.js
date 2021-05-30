@@ -1,7 +1,14 @@
-const Event = require('../models/event');
+const { buildSchema } = require('graphql');
 
-module.exports = {
-  listEvents() {
-    return Event.find();
-  },
-}
+module.exports = buildSchema(`
+  type Event {
+    id: ID,
+    title: String
+    allDay: Boolean
+    start: String,
+    end: String
+  }
+  type Query {
+    listEvents: [Event]
+  }
+`);
