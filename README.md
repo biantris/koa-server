@@ -1,2 +1,2 @@
-# koa-server
+# koa-server to graphQL-server (crud)
 * WIP
