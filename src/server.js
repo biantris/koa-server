@@ -25,7 +25,15 @@ router.get('koa-server', '/', (ctx) => {
 })
 
 app
-    .use(router.routes())
-    .use(router.allowedMethods())
+    .use(router.routes(
+      '/graphql',
+    ))
+    .use(router.allowedMethods(
+      graphqlHTTP({
+        schema,
+        rootValue: root,
+        graphiql: true
+      })
+    ))
 
-app.listen(8080);
+app.listen(9000);
