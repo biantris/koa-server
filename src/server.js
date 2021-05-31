@@ -20,20 +20,18 @@ app.on('error', err => {
   console.log('Server error', err);
 });
 
-router.get('koa-server', '/', (ctx) => {
+router.get( '/',  async  (ctx) => {
     ctx.body = 'Hello World'
 })
 
-app
-    .use(router.routes(
-      '/graphql',
-    ))
-    .use(router.allowedMethods(
-      graphqlHTTP({
-        schema,
-        rootValue: root,
-        graphiql: true
-      })
-    ))
+router.all('/graphql', graphqlHTTP({
+  schema,
+  graphiql: true,
+  rootValue: root,
+}));
 
-app.listen(9000);
+app
+    .use(router.routes())
+    .use(router.allowedMethods())
+
+app.listen(9000, () => console.log('Server running!'));
