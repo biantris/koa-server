@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@koa/router": "10.0.0",
+    "esbuild": "^0.12.5",
     "graphql": "^15.5.0",
     "koa": "^2.13.1",
     "koa-graphql": "^0.8.0",
