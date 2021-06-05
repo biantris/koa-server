@@ -5,6 +5,7 @@
     "graphql": "^15.5.0",
     "koa": "^2.13.1",
     "koa-graphql": "^0.8.0",
-    "mongoose": "^5.12.12"
+    "mongoose": "^5.12.12",
+    "prettier": "^2.3.1"
   }
 }
