@@ -1,2 +1,7 @@
 # koa-server to graphQL-server (crud)
-* WIP
+## WIP
+- Koa
+- Mongoose
+- GraphQL (Relay)
+- Relay-Hooks
+- JavaScript -> ts
