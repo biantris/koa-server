@@ -6,6 +6,10 @@
     "koa": "^2.13.1",
     "koa-graphql": "^0.8.0",
     "mongoose": "^5.12.12",
-    "prettier": "^2.3.1"
-  }
+    "prettier": "^2.3.1",
+    "react-dom": "^17.0.2"
+  },
+    "scripts":  {
+      "build" : "esbuild app.jsx --bundle --outfile = out.js"
+   }
 }
