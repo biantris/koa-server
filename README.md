@@ -1,7 +1,5 @@
-# koa-server to graphQL-server (crud)
+# koa-server to graphQL-server
 ## WIP
 - Koa
 - Mongoose
-- GraphQL (Relay)
-- Relay-Hooks
-- JavaScript -> ts
+- GraphQL
