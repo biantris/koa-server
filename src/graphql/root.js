@@ -1,11 +1,9 @@
-const Event = require('../models/event');
+import Event from '../models/event';
 
-module.exports = {
-  listEvents() {
-    return Event.find();
-  },
-  createEvent(input) {
-    const newEvent = new Event(input);
-    return newEvent.save();
-  },
+export function listEvents() {
+  return Event.find();
+}
+export function createEvent(input) {
+  const newEvent = new Event(input);
+  return newEvent.save();
 }
