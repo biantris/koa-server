@@ -1,7 +1,7 @@
 const koa = require('koa');
 const graphqlHTTP = require('koa-graphql');
 const Router = require('@koa/router');
-const schema = require('./graphql/schema');
+const schema = require('./graphql/schema').default;
 const mongoose = require('mongoose');
 const root = require('./graphql/root');
 
@@ -34,4 +34,7 @@ app
     .use(router.routes())
     .use(router.allowedMethods())
 
-app.listen(9000, () => console.log('Server running!'));
+app.listen(9000, () => console.log('Server running 🚀'));
+
+
+export default app;

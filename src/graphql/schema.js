@@ -1,6 +1,6 @@
-const { buildSchema } = require('graphql');
+import { buildSchema } from 'graphql';
 
-module.exports = buildSchema(`
+export default buildSchema(`
   type Event {
     id: ID
     title: String
@@ -12,6 +12,10 @@ module.exports = buildSchema(`
     listEvents: [Event]
   }
   type Mutation {
-    createEvent(title: String!, start: String, end: String, allDay: Boolean): Event
+    createEvent(
+      title: String!,
+      start: String, 
+      end: String, 
+      allDay: Boolean): Event
   }
 `);
