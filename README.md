@@ -1,8 +1,9 @@
 # koa-server to graphQL-server
-## WIP
+## 🚧 WIP 🚧
 - Koa
 - Mongoose
 - GraphQL
+
 ## to-do
 - [ ] add commitlint
 - [ ] migrate to TypeScript
@@ -15,3 +16,6 @@
 - https://github.com/koajs/examples
 - https://github.com/koajs/koa
 - https://github.com/koajs/workshop
+
+## contributions
+Feel free to contribute to this project, if you find any bugs or improvements, open an issue and send a PR about it \o/
