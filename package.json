@@ -22,7 +22,7 @@
     "@babel/plugin-proposal-optional-chaining": "7.13.12",
     "@babel/plugin-transform-async-to-generator": "7.13.0",
     "@babel/preset-env": "7.13.15",
-    "@babel/preset-typescript": "7.13.0",
+    "@babel/preset-typescript": "^7.16.7",
     "@types/babel__core": "7.1.14",
     "@types/babel__preset-env": "7.9.1",
     "@types/koa": "2.13.1",
@@ -42,8 +42,8 @@
     "webpack-merge": "5.7.3",
     "webpack-node-externals": "3.0.0"
   },
-    "scripts":  {
-      "start": "webpack --watch --progress --config webpack.js",
-      "build" : "esbuild app.jsx --bundle --outfile = out.js"
-   }
+  "scripts": {
+    "start": "webpack --watch --progress --config webpack.js",
+    "build": "esbuild app.jsx --bundle --outfile = out.js"
+  }
 }
