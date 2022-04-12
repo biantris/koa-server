@@ -6,7 +6,7 @@
 
 ## to-do
 - [ ] add commitlint
-- [ ] migrate to TypeScript
+- [x] migrate to TypeScript
 - [ ] add koa Helix
 
 ## links userfull
