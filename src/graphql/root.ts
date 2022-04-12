@@ -1,4 +1,4 @@
-import Event from '../models/event';
+import Event from '../modules/event/EventModel';
 
 export function listEvents() {
   return Event.find();
