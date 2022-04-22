@@ -12,7 +12,7 @@ module.exports = {
   devtool: 'eval-cheap-source-map',
   entry: {
     server: [
-      './src/app.js',
+      './src/app.ts',
     ],
   },
   output: {
@@ -48,9 +48,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new ReloadServerPlugin({
-      script: path.resolve('build', 'graphql.js'),
-    }),
+     new ReloadServerPlugin({
+       script: path.resolve('build', 'graphql.js'),
+     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
