@@ -1,5 +1,5 @@
-import { setupMaster, on, fork } from 'cluster';
-import { resolve } from 'path';
+const cluster = require('cluster');
+const path = require('path')
 
 const defaultOptions = {
   script: 'server.js',
@@ -10,11 +10,11 @@ class ReloadServerPlugin {
     this.done = null;
     this.workers = [];
 
-    setupMaster({
-      exec: resolve(process.cwd(), script),
+    cluster.setupMaster({
+      exec: path.resolve(process.cwd(), script),
     });
 
-    on('online', (worker) => {
+    cluster.on('online', (worker) => {
       this.workers.push(worker);
 
       if (this.done) {
@@ -41,10 +41,10 @@ class ReloadServerPlugin {
 
         this.workers = [];
 
-        fork();
+        cluster.fork();
       },
     );
   }
 }
 
-export default ReloadServerPlugin;
+module.exports = ReloadServerPlugin;
