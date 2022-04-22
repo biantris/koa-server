@@ -1,4 +1,6 @@
-import { Schema, model } from "mongoose";
+import mongoose, { Document, Model } from "mongoose";
+
+const Schema = mongoose.Schema;
 
 const EventSchema = new Schema({
   title: String,
@@ -7,4 +9,13 @@ const EventSchema = new Schema({
   allDay: Boolean,
 });
 
-export default model("Event", EventSchema);
+export interface IEvent extends Document {
+  title: string;
+  start: Date;
+  end: Date;
+  allDay: boolean;
+}
+
+const EventModel: Model<IEvent> = mongoose.model("Event", EventSchema);
+
+export default EventModel;
