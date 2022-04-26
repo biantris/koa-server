@@ -12,7 +12,7 @@ module.exports = {
   devtool: 'eval-cheap-source-map',
   entry: {
     server: [
-      './src/app.ts',
+      './src/server.js',
     ],
   },
   output: {
