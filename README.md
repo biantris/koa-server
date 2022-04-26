@@ -5,9 +5,6 @@
 - GraphQL
 
 ## to-do
-- [ ] add commitlint
-- [x] migrate to TypeScript
-- [ ] add koa Helix
 
 ## links userfull
 - https://dev.to/danielrearden/building-a-graphql-server-with-graphql-helix-2k44
