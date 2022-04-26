@@ -21,11 +21,6 @@ router.all('/graphql', graphqlHTTP({
   rootValue: root,
 }));
 
-app
-    .use(router.routes())
-    .use(router.allowedMethods())
-
-app.listen(9000, () => console.log('Server running 🚀'));
-
+app.use(router.routes()).use(router.allowedMethods());
 
 export default app;
