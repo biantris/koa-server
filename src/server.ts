@@ -1,4 +1,4 @@
-import connectDB from './database/database.ts';
+import connectDB from './database/database';
 import { createServer } from "http";
 import app from "./app";
 
