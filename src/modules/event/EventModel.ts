@@ -3,14 +3,26 @@ import mongoose, { Document, Model } from "mongoose";
 const Schema = mongoose.Schema;
 
 const EventSchema = new Schema({
-  title: String,
-  start: Date,
-  end: Date,
-  allDay: Boolean,
+  name: {
+    type: String,
+    required: "Name is required",
+  },
+  start: {
+    type: Date,
+    required: "Start is required",
+  },
+  end: {
+    type: Date,
+    required: "End is required",
+  },
+  allDay: {
+    type: Boolean,
+    required: "AllDay is required",
+  },
 });
 
 export interface IEvent extends Document {
-  title: string;
+  name: string;
   start: Date;
   end: Date;
   allDay: boolean;
