@@ -2,7 +2,7 @@ const cluster = require('cluster');
 const path = require('path')
 
 const defaultOptions = {
-  script: 'server.js',
+  script: 'server.ts',
 };
 
 class ReloadServerPlugin {
