@@ -1,4 +1,6 @@
-# koa-server to graphQL-server
+# koa-server
+A graphQL Relay server with Koa, MongoDB and Mongoose
+
 #### 🚧 WIP 🚧
 - Koa
 - Mongoose
