@@ -34,7 +34,7 @@ const mutation = mutationWithClientMutationId({
 
   },
   outputFields: {
-    post: {
+    event: {
       type: EventType,
       resolve: async ({ id }, _, context) => {
         return await EventLoader.load(context, id);

@@ -12,7 +12,7 @@ export const createEvent = (args: DeepPartial<IEvent> = {}) => {
   }
 
   if (end === undefined) {
-    end = `2019-01-0${i}T00:00:00.000Z`;
+    end = `2019-01-0${i}T23:59:59.000Z`;
   }
 
   return new Event({
