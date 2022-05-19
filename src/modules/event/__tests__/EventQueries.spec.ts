@@ -17,7 +17,7 @@ beforeEach(clearDbAndRestartCounters);
 
 afterAll(disconnectMongoose);
 
-it("should all events", async () => {
+it("should query all events", async () => {
   const event = await createEvent();
   const anotherEvent = await createEvent();
 
