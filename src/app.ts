@@ -1,8 +1,8 @@
 const koa = require('koa');
 const graphqlHTTP = require('koa-graphql');
 const Router = require('@koa/router');
-const schema = require('./graphql/schema').default;
-const root = require('./graphql/root');
+const schema = require('./schema/schema').default;
+//const root = require('./graphql/root');
 
 const app = new koa();
 const router = new Router();
@@ -18,7 +18,7 @@ router.get( '/',  async  (ctx) => {
 router.all('/graphql', graphqlHTTP({
   schema,
   graphiql: true,
-  rootValue: root,
+  //rootValue: root,
 }));
 
 app.use(router.routes()).use(router.allowedMethods());
