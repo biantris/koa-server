@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLNonNull } from 'graphql';
 
-import { connectionArgs } from "@entria/graphql-mongo-helpers";
+import { connectionArgs } from "../graphql/connectionDefinitions";
 
 import { nodesField, nodeField } from '../modules/node/typeRegister';
 import * as EventLoader from '../modules/event/EventLoader';
