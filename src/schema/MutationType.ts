@@ -2,11 +2,10 @@ import { GraphQLObjectType } from 'graphql';
 
 import EventMutations from '../modules/event/mutations';
 
-const MutationType = new GraphQLObjectType({
+export default new GraphQLObjectType({
   name: 'Mutation',
+  description: "Root of ... mutations",
   fields: () => ({
-  ...EventMutations,
+    ...EventMutations,
   }),
 });
-
-export default MutationType;

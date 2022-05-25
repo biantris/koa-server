@@ -1,3 +1,3 @@
 import CreateEvent from './CreateEventMutation';
 
-export default CreateEvent;
+export default { CreateEvent };
