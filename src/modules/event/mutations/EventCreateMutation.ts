@@ -4,11 +4,11 @@ import { mutationWithClientMutationId } from 'graphql-relay';
 
 import { errorField, successField, getObjectId } from "@entria/graphql-mongo-helpers";
 
-import EventModel from '../../event/EventModel';
+import EventModel from '../EventModel';
 
-import * as EventLoader from '../../event/EventLoader';
+import * as EventLoader from '../EventLoader';
 
-import EventType from '../../event/EventType';
+import EventType from '../EventType';
 
 type Args = {
   event: string;

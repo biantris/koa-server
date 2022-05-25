@@ -1,3 +1,3 @@
-import CreateEvent from './CreateEventMutation';
+import EventCreate from './EventCreateMutation';
 
-export default { CreateEvent };
+export default { EventCreate };

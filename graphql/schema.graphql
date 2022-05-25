@@ -82,7 +82,7 @@ type Event implements Node {
 
 """Root of ... mutations"""
 type Mutation {
-  CreateEvent(input: Create eventInput!): Create eventPayload
+  EventCreate(input: Create eventInput!): Create eventPayload
 }
 
 type Create eventPayload {
