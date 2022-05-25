@@ -52,12 +52,12 @@ it('should query all events', async () => {
   expect(result.errors).toBeUndefined();
 
   // eslint-disable-next-line
-  console.log('result: ', result.data.events.node.name);
+  console.log('result: ', result.data.events[0].node.name);
 
   expect(result.data.events.edges.length).toBe(2);
 
-  expect(result.data.events.edges.node.name).toBe(event.name);
-  expect(result.data.events.edges.node.name).toBe(eventB.name);
+  expect(result.data.events.edges[0].node.name).toBe(event.name);
+  expect(result.data.events.edges[1].node.name).toBe(eventB.name);
 
   expect(sanitizeTestObject(result.data)).toMatchSnapshot();
 });
