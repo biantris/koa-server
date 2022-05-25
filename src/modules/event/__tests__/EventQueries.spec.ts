@@ -19,14 +19,14 @@ afterAll(disconnectMongoose);
 
 it("should query all events", async () => {
   const event = await createEvent({
-    name: "Event",
+    name: "event",
     start: "2019-01-01T00:00:00.000Z",
     end: "2019-01-01T23:59:59.000Z",
     allDay: true,
   });
 
-  const anotherEvent = await createEvent({
-    name: "Another Event",
+  const eventB = await createEvent({
+    name: "eventB",
     start: "2019-01-02T00:00:00.000Z",
     end: "2019-01-02T23:59:59.000Z",
     allDay: false,
@@ -39,6 +39,9 @@ it("should query all events", async () => {
         edges {
           node {
             name
+            start
+            end
+            allDay
           }
         }
       }
@@ -65,7 +68,7 @@ it("should query all events", async () => {
   expect(result.data.events.edges.length).toBe(2);
 
   expect(result.data.events.edges[0].node.name).toBe(event.name);
-  expect(result.data.events.edges[1].node.name).toBe(anotherEvent.name);
+  expect(result.data.events.edges[1].node.name).toBe(eventB.name);
 
   expect(sanitizeTestObject(result.data)).toMatchSnapshot();
 });
