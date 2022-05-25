@@ -2,7 +2,7 @@ import { GraphQLBoolean, GraphQLObjectType, GraphQLString } from "graphql";
 
 import { globalIdField } from "graphql-relay";
 
-import { connectionDefinitions } from "@entria/graphql-mongo-helpers";
+import { connectionDefinitions } from "../../graphql";
 
 import { load } from "./EventLoader";
 
