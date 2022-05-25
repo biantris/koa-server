@@ -4,7 +4,7 @@ import EventModel from "./EventModel";
 
 import { eventFilterMapping } from "./EventFilterInputType";
 
-import { registerLoader } from "../../loader/loaderRegister";
+import { registerLoader } from "../../graphql/loaderRegister";
 
 const {
   Wrapper: Event,
