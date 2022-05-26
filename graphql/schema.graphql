@@ -82,10 +82,10 @@ type Event implements Node {
 
 """Root of ... mutations"""
 type Mutation {
-  EventCreate(input: Create eventInput!): Create eventPayload
+  EventCreate(input: CreateEventInput!): CreateEventPayload
 }
 
-type Create eventPayload {
+type CreateEventPayload {
   event: Event
 
   """Default error field resolver."""
@@ -96,7 +96,7 @@ type Create eventPayload {
   clientMutationId: String
 }
 
-input Create eventInput {
+input CreateEventInput {
   event: ID!
   clientMutationId: String
 }

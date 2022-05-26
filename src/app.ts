@@ -1,26 +1,48 @@
-const koa = require('koa');
-const graphqlHTTP = require('koa-graphql');
-const Router = require('@koa/router');
-const schema = require('./schema/schema').default;
-//const root = require('./graphql/root');
+import { getDataloaders } from "./graphql/loaderRegister";
 
-const app = new koa();
+import Koa from "koa";
+import GraphQLHTTP from "koa-graphql";
+import Router from "koa-router";
+import cors from "@koa/cors";
+import bodyParser from "koa-bodyparser";
+
+import { schema } from "./schema/schema";
+
+const app = new Koa();
 const router = new Router();
 
-app.on('error', err => {
-  console.log('Server error', err);
-});
+const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
+  const { event } = koaContext;
+  const dataloaders = getDataloaders();
 
-router.get( '/',  async  (ctx) => {
-    ctx.body = 'Hello World'
-})
+  return {
+    graphiql: true,
+    schema,
+    context: {
+      event,
+      req,
+      dataloaders,
+    },
+    formatError: (error) => {
+      console.log(error.message);
+      console.log(error.locations);
+      console.log(error.stack);
 
-router.all('/graphql', graphqlHTTP({
-  schema,
-  graphiql: true,
-  //rootValue: root,
-}));
+      return {
+        message: error.message,
+        locations: error.locations,
+        stack: error.stack,
+      };
+    },
+  };
+};
 
+const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
+
+router.all("/graphql", graphqlServer);
+
+app.use(bodyParser());
+app.use(cors());
 app.use(router.routes()).use(router.allowedMethods());
 
 export default app;

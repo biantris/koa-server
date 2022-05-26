@@ -2,6 +2,7 @@
   "dependencies": {
     "@entria/graphql-mongo-helpers": "^1.1.2",
     "@entria/graphql-mongoose-loader": "^4.3.2",
+    "@koa/cors": "^3.3.0",
     "@koa/router": "10.0.0",
     "@types/jest": "^27.5.1",
     "babel-node": "^0.0.1-security",
@@ -11,7 +12,9 @@
     "graphql": "^15.5.0",
     "graphql-relay": "^0.9.0",
     "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
     "koa-graphql": "^0.8.0",
+    "koa-router": "^7.4.0",
     "mongoose": "^5.12.12",
     "prettier": "^2.3.1",
     "react-dom": "^17.0.2",

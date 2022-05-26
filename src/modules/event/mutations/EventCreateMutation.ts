@@ -14,7 +14,7 @@ type Args = {
   event: string;
 };
 const mutation = mutationWithClientMutationId({
-  name: 'Create event',
+  name: 'CreateEvent',
   inputFields: {
     event: {
       type: new GraphQLNonNull(GraphQLID),
