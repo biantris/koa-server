@@ -2,15 +2,31 @@
 GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 
 #### 🚧 WIP 🚧
-- Koa
-- MongoDB
-- Mongoose
-- GraphQL
-- Relay
+- [x] Koa
+- [x] MongoDB
+- [x] Mongoose
+- [x] GraphQL
+- [x] Relay
+- [ ] Jest
+- [ ] Testing Library
 
 ### Project architecture
 [wip]
 
+### Getting Started
+- clone this repo
+```sh
+# install dependencies
+> yarn
+# or
+> yarn install
+
+# start project
+> yarn start
+
+# see server port
+http://localhost:9000/
+```
 ## to-do
 
 - https://github.com/biantris/koa-server/projects/1
