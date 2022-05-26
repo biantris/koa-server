@@ -11,7 +11,7 @@ import * as EventLoader from '../EventLoader';
 import EventType from '../EventType';
 
 const mutation = mutationWithClientMutationId({
-  name: 'CreateEvent',
+  name: 'EventCreate',
   description: "Create a new Event",
   inputFields: {
     eventId: {

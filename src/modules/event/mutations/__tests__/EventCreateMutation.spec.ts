@@ -37,6 +37,7 @@ it('should create a new event', async () => {
           allDay
         }
         error
+        success
       }
     }
   `;
@@ -55,12 +56,13 @@ it('should create a new event', async () => {
 
   const result = await graphql(schema, query, rootValue, contextValue, variables);
 
-  console.log(result.data.CreateEvent)
+  //console.log(result.data.EventCreate)
 
   expect(result.errors).toBeUndefined();
-  expect(result.data.CreateEvent.error).toBeNull();
-
-  expect(result.data.CreateEvent.event).toBeDefined();
+  expect(result.data.EventCreate.error).toBeNull();
+  
+  expect(result.data.EventCreate.success).toBe('Event created \o/');
+  expect(result.data.EventCreate.event).toBeDefined();
 
   expect(sanitizeTestObject(result.data)).toMatchSnapshot();
 });

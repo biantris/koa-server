@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a new event 1`] = `
+Object {
+  "EventCreate": Object {
+    "error": "EMPTY",
+    "event": "EMPTY",
+    "success": "Event created o/",
+  },
+}
+`;
