@@ -32,18 +32,7 @@ const mutation = mutationWithClientMutationId({
   },
   mutateAndGetPayload: async ({ eventId, name, start, end, allDay }) => {
 
-    const event = await EventModel.findOne({
-      _id: eventId,
-      name,
-    });
-
-    if (event) {
-      return {
-        error: {
-          message: 'Event already exists',
-        },
-      };
-    }
+    const event = await new EventModel({eventId, name, start, end, allDay}).save();
 
     if (!event) {
       return {
@@ -51,13 +40,12 @@ const mutation = mutationWithClientMutationId({
       };
     }
 
-    await event.save()
-
     return {
       error: null,
       success: 'Event created \o/',
     };
   },
+
   outputFields: {
     event: {
       type: EventType,

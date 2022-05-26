@@ -21,8 +21,8 @@ afterAll(disconnectMongoose);
 it('should create a new event', async () => {
   const event = await createEvent({
     name: 'event A',
-    start: '2019-01-01T00:00:00.000Z',
-    end: '2019-01-01T23:59:59.000Z',
+    start: '2022-01-01T00:00:00.000Z',
+    end: '2022-01-01T23:59:59.000Z',
     allDay: true,
   });
 
@@ -44,8 +44,8 @@ it('should create a new event', async () => {
   const variables = {
     eventId: event.id,
     name: event.name,
-    start: event.start,
-    end: event.end,
+    start: event.start.toISOString(),
+    end: event.end.toISOString(),
     allDay: event.allDay,
   };
 
@@ -54,6 +54,8 @@ it('should create a new event', async () => {
   const contextValue = { dataloaders: getDataloaders() };
 
   const result = await graphql(schema, query, rootValue, contextValue, variables);
+
+  console.log(result.data.CreateEvent)
 
   expect(result.errors).toBeUndefined();
   expect(result.data.CreateEvent.error).toBeNull();
