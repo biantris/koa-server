@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should query all events 1`] = `
+Object {
+  "events": Object {
+    "edges": Array [
+      Object {
+        "node": Object {
+          "allDay": false,
+          "end": "1546473599000",
+          "name": "event B",
+          "start": "1546387200000",
+        },
+      },
+      Object {
+        "node": Object {
+          "allDay": true,
+          "end": "1546387199000",
+          "name": "event A",
+          "start": "1546300800000",
+        },
+      },
+    ],
+  },
+}
+`;

@@ -6,6 +6,8 @@ import { schema } from '../../../schema/schema';
 
 import { createEvent } from '../fixture/createEvent';
 
+import { getDataloaders } from "../../../graphql/loaderRegister";
+
 beforeAll(connectMongoose);
 
 beforeEach(clearDbAndRestartCounters);
@@ -44,20 +46,20 @@ it('should query all events', async () => {
   `;
 
   const rootValue = {};
-  //const contextValue = await getContext({});
+  const contextValue = { dataloaders: getDataloaders() }
   const variables = {};
 
-  const result = await graphql(schema, query, rootValue, variables);
-
+  const result = await graphql(schema, query, rootValue, contextValue, variables);
+  
   expect(result.errors).toBeUndefined();
 
   // eslint-disable-next-line
-  console.log('result: ', result.data.events[0].node.name);
+  console.log('result: ', result.data.events.edges[1]);
 
   expect(result.data.events.edges.length).toBe(2);
 
-  expect(result.data.events.edges[0].node.name).toBe(event.name);
-  expect(result.data.events.edges[1].node.name).toBe(eventB.name);
+  expect(result.data.events.edges[0].node.name).toBe(eventB.name);
+  expect(result.data.events.edges[1].node.name).toBe(event.name);
 
   expect(sanitizeTestObject(result.data)).toMatchSnapshot();
 });
