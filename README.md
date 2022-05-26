@@ -17,15 +17,15 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - clone this repo
 ```sh
 # install dependencies
-> yarn
+yarn
 # or
-> yarn install
+yarn install
 
 # copy .env file
-> cp .env.example .env
+cp .env.example .env
 
 # start project
-> yarn start
+yarn start
 
 # see on GraphiQL graphql interface on localhost link
 http://localhost:9000/graphql
@@ -35,6 +35,12 @@ http://localhost:9000/graphql
 ```sh
 yarn schema
 ```
+
+### Create events manually
+```sh
+yarn seed
+```
+
 ## to-do
 
 - https://github.com/biantris/koa-server/projects/1
