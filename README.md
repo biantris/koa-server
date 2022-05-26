@@ -7,8 +7,8 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] Mongoose
 - [x] GraphQL
 - [x] Relay
-- [ ] Jest
-- [ ] Testing Library
+- [x] Jest
+- [ ] SuperTest
 
 ### Project architecture
 [wip]
@@ -24,9 +24,10 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 # start project
 > yarn start
 
-# see server port
-http://localhost:9000/
+# see on GraphiQL graphql interface on localhost link
+http://localhost:9000/graphql
 ```
+
 ### Generating the schema
 ```sh
 yarn schema
