@@ -9,6 +9,7 @@
     "@types/jest": "^27.5.1",
     "babel-node": "^0.0.1-security",
     "dataloader": "^1.4.0",
+    "dotenv-safe": "^8.2.0",
     "esbuild": "^0.12.5",
     "get-graphql-schema": "^2.1.2",
     "graphql": "^15.5.0",
