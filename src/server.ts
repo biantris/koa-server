@@ -1,4 +1,4 @@
-import connectDB from './database/database';
+import { connectDB }from './database/database';
 import dotenv from "dotenv";
 import { createServer } from "http";
 import { environment, serverConf } from "./shared";

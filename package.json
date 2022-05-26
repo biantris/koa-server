@@ -65,6 +65,7 @@
     "start": "webpack --watch --progress --config webpack.js",
     "jest": "jest",
     "build": "babel-node --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\"",
-    "schema": "yarn build webpackx.ts ./scripts/updateSchema.ts"
+    "schema": "yarn build webpackx.ts ./scripts/updateSchema.ts",
+    "seed": "yarn build webpackx.ts ./scripts/createSeedEvent.ts"
   }
 }
