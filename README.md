@@ -21,6 +21,9 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 # or
 > yarn install
 
+# copy .env file
+> cp .env.example .env
+
 # start project
 > yarn start
 
