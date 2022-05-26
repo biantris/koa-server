@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return 200 1`] = `
+Object {
+  "data": Object {
+    "events": Object {
+      "edges": Array [
+        Object {
+          "node": Object {
+            "allDay": true,
+            "end": "1546387199000",
+            "name": "event",
+            "start": "1546300800000",
+          },
+        },
+      ],
+    },
+  },
+}
+`;
