@@ -27,6 +27,10 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 # see server port
 http://localhost:9000/
 ```
+### Generating the schema
+```sh
+yarn schema
+```
 ## to-do
 
 - https://github.com/biantris/koa-server/projects/1
