@@ -8,7 +8,7 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] GraphQL
 - [x] Relay
 - [x] Jest
-- [ ] SuperTest
+- [x] SuperTest
 
 ### Project architecture
 [wip]
