@@ -82,6 +82,7 @@ type Event implements Node {
 
 """Root of ... mutations"""
 type Mutation {
+  """Create a new Event"""
   EventCreate(input: CreateEventInput!): CreateEventPayload
 }
 
@@ -97,6 +98,10 @@ type CreateEventPayload {
 }
 
 input CreateEventInput {
-  event: ID!
+  eventId: ID!
+  name: String!
+  start: String!
+  end: String!
+  allDay: Boolean!
   clientMutationId: String
 }

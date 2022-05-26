@@ -1,8 +1,8 @@
-import { GraphQLNonNull, GraphQLID } from 'graphql';
+import { GraphQLNonNull, GraphQLID, GraphQLString, GraphQLBoolean } from 'graphql';
 
 import { mutationWithClientMutationId } from 'graphql-relay';
 
-import { errorField, successField, getObjectId } from "@entria/graphql-mongo-helpers";
+import { errorField, successField } from "@entria/graphql-mongo-helpers";
 
 import EventModel from '../EventModel';
 
@@ -10,28 +10,53 @@ import * as EventLoader from '../EventLoader';
 
 import EventType from '../EventType';
 
-type Args = {
-  event: string;
-};
 const mutation = mutationWithClientMutationId({
   name: 'CreateEvent',
+  description: "Create a new Event",
   inputFields: {
-    event: {
+    eventId: {
       type: new GraphQLNonNull(GraphQLID),
     },
+    name: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    start: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    end: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+    allDay: {
+      type: new GraphQLNonNull(GraphQLBoolean),
+    },
   },
-  mutateAndGetPayload: async (args: Args) => {
+  mutateAndGetPayload: async ({ eventId, name, start, end, allDay }) => {
 
     const event = await EventModel.findOne({
-      _id: getObjectId(args.event),
+      _id: eventId,
+      name,
     });
 
-    if (!event) {
+    if (event) {
       return {
-        error: 'event not found',
+        error: {
+          message: 'Event already exists',
+        },
       };
     }
 
+    if (!event) {
+      return {
+        error: 'Event not found',
+      };
+    }
+
+    await event.save()
+
+    return {
+      error: null,
+      success: 'Event created \o/',
+    };
   },
   outputFields: {
     event: {
