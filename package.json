@@ -1,4 +1,6 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
   "dependencies": {
     "@entria/graphql-mongo-helpers": "^1.1.2",
     "@entria/graphql-mongoose-loader": "^4.3.2",
