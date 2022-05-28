@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/65451957/170831440-11ffbec9-5380-4513-9084-a6c09aa9dcdb.png)
+
 # koa-server
 GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 
