@@ -56,7 +56,7 @@
     "mongodb-memory-server-global": "6.9.3",
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "5.38.1",
-    "webpack-cli": "4.7.2",
+    "webpack-cli": "4.9.2",
     "webpack-dev-server": "3.11.2",
     "webpack-merge": "5.7.3",
     "webpack-node-externals": "3.0.0"
