@@ -1800,10 +1800,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-convert@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@types/koa-convert/-/koa-convert-1.2.3.tgz#8c54390aca943bbb846faf44a2cf735caaca4f24"
-  integrity sha512-3TKYhzKBk0jsaUgYu6eg4o9s1qwWlSfQQ/j90BblY0WYF3RyD6JiIBpigFrCwIhoNLDOYSz1mBzm5Oscy3WVvQ==
+"@types/koa-convert@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@types/koa-convert/-/koa-convert-1.2.4.tgz#0108af79ac6f1bf70d983f29e9c74e36c79178a6"
+  integrity sha512-RTty27my11ZBb2zgYczUNum5G1+anIF6eV01BcpkuYHwPZmhqHoGbBLMQp1uId1+KJS/Ds9Fxtt4DmedvSlBBQ==
   dependencies:
     "@types/koa" "*"
 
