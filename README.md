@@ -1,6 +1,8 @@
 # koa-server
 GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 
+See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
+
 #### 🚧 WIP 🚧
 - [x] Koa
 - [x] MongoDB
