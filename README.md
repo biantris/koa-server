@@ -73,7 +73,21 @@ yarn seed
     }
 ```
 ### Queries
-[wip]
+- Event queries
+```graphql
+query {
+      events {
+        edges {
+          node {
+            name
+            start
+            end
+            allDay
+          }
+        }
+      }
+    }
+```
 
 ## contributions
 Feel free to contribute to this project, if you find any bugs or improvements, open an issue and send a PR about it \o/
