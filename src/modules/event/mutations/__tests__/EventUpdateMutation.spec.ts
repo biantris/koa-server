@@ -63,6 +63,11 @@ it('should update a event', async () => {
   expect(result.data.EventUpdate.error).toBeNull();
   
   expect(result.data.EventUpdate.success).toBe('Event updated /o/');
+  
+  expect(result.data.EventUpdate.event.name).toBe('event B');
+  expect(result.data.EventUpdate.event.start).toBe('2022-01-02T00:00:00.000Z');
+  expect(result.data.EventUpdate.event.end).toBe('2022-01-02T23:59:59.000Z');
+  expect(result.data.EventUpdate.event.allDay).toBe(false);
 
   expect(sanitizeTestObject(result.data)).toMatchSnapshot();
 });

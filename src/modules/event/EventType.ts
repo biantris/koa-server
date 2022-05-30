@@ -19,11 +19,11 @@ const EventType = new GraphQLObjectType({
     },
     start: {
         type: GraphQLString,
-        resolve: event => event.start,
+        resolve: event => event.start.toISOString(),
     },
     end: {
         type: GraphQLString,
-        resolve: event => event.end,
+        resolve: event => event.end.toISOString(),
     },
     allDay: {
         type: GraphQLBoolean,

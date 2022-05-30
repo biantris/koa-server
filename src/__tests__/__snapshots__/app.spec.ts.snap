@@ -8,9 +8,9 @@ Object {
         Object {
           "node": Object {
             "allDay": true,
-            "end": "1546387199000",
+            "end": "2019-01-01T23:59:59.000Z",
             "name": "event",
-            "start": "1546300800000",
+            "start": "2019-01-01T00:00:00.000Z",
           },
         },
       ],
