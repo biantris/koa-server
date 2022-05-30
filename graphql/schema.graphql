@@ -87,6 +87,9 @@ type Mutation {
 
   """Delete a Event"""
   EventDelete(input: EventDeleteInput!): EventDeletePayload
+
+  """Update a Event"""
+  EventUpdate(input: EventUpdateInput!): EventUpdatePayload
 }
 
 type EventCreatePayload {
@@ -110,8 +113,7 @@ input EventCreateInput {
 }
 
 type EventDeletePayload {
-  id: ID
-  eventId: Event
+  eventId: ID
 
   """Default error field resolver."""
   error: String
@@ -123,5 +125,25 @@ type EventDeletePayload {
 
 input EventDeleteInput {
   eventId: ID!
+  clientMutationId: String
+}
+
+type EventUpdatePayload {
+  event: Event
+
+  """Default error field resolver."""
+  error: String
+
+  """Default success field resolver."""
+  success: String
+  clientMutationId: String
+}
+
+input EventUpdateInput {
+  eventId: ID!
+  name: String!
+  start: String!
+  end: String!
+  allDay: Boolean!
   clientMutationId: String
 }
