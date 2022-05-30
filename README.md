@@ -86,7 +86,7 @@ yarn seed
 ```graphql
    mutation {
    EventUpdate (input: { 
-     eventId: "629521641ff2c2c8f5f2e449", 
+     eventId: "62952906f5c651ced019adf3", 
      name: "nice event /o/", 
      start: "2022-07-01T00:00:00.000Z",
      end: "2022-07-01T23:59:59.000Z",
