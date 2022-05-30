@@ -108,7 +108,7 @@ yarn seed
 ### Queries
 - Event queries
 ```graphql
-query {
+   query {
       events {
         edges {
           node {
