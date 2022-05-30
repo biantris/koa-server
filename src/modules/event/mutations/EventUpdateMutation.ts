@@ -60,7 +60,7 @@ const mutation = mutationWithClientMutationId({
     );
 
     return {
-      id: eventId._id,
+      id: event._id,
       error: null,
       success: 'Event updated /o/',
     };

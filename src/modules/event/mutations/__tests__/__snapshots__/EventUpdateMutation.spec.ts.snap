@@ -4,7 +4,13 @@ exports[`should update a event 1`] = `
 Object {
   "EventUpdate": Object {
     "error": "EMPTY",
-    "event": "EMPTY",
+    "event": Object {
+      "allDay": false,
+      "end": "1641167999000",
+      "id": "FROZEN-ID",
+      "name": "event B",
+      "start": "1641081600000",
+    },
     "success": "Event updated /o/",
   },
 }
