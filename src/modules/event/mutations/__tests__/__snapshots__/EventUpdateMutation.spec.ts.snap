@@ -6,10 +6,10 @@ Object {
     "error": "EMPTY",
     "event": Object {
       "allDay": false,
-      "end": "1641167999000",
+      "end": "2022-01-02T23:59:59.000Z",
       "id": "FROZEN-ID",
       "name": "event B",
-      "start": "1641081600000",
+      "start": "2022-01-02T00:00:00.000Z",
     },
     "success": "Event updated /o/",
   },
