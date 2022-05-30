@@ -84,6 +84,9 @@ type Event implements Node {
 type Mutation {
   """Create a new Event"""
   EventCreate(input: EventCreateInput!): EventCreatePayload
+
+  """Delete a Event"""
+  EventDelete(input: EventDeleteInput!): EventDeletePayload
 }
 
 type EventCreatePayload {
@@ -103,5 +106,22 @@ input EventCreateInput {
   start: String!
   end: String!
   allDay: Boolean!
+  clientMutationId: String
+}
+
+type EventDeletePayload {
+  id: ID
+  eventId: Event
+
+  """Default error field resolver."""
+  error: String
+
+  """Default success field resolver."""
+  success: String
+  clientMutationId: String
+}
+
+input EventDeleteInput {
+  eventId: ID!
   clientMutationId: String
 }

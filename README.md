@@ -72,6 +72,20 @@ yarn seed
       }
     }
 ```
+- Event delete Mutation
+```graphql
+  mutation {
+      EventDelete (input: { eventId: "629521641ff2c2c8f5f2e449" }) {
+        eventId
+        error
+        success
+      }
+    }
+```
+- Event Update Mutation
+
+  [wip]
+  
 ### Queries
 - Event queries
 ```graphql
