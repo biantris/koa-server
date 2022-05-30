@@ -11,6 +11,7 @@ import { createEvent } from '../../fixture/createEvent';
 import { getDataloaders } from '../../../../graphql/loaderRegister';
 
 import { schema } from '../../../../schema/schema';
+import { toGlobalId } from 'graphql-relay';
 
 beforeAll(connectMongoose);
 
@@ -43,7 +44,7 @@ it('should update a event', async () => {
   `;
 
   const variables = {
-    eventId: event.id,
+    eventId: toGlobalId("Event", event._id),
     name: 'event B',
     start: '2022-01-02T00:00:00.000Z',
     end: '2022-01-02T23:59:59.000Z',
@@ -56,7 +57,7 @@ it('should update a event', async () => {
 
   const result = await graphql(schema, query, rootValue, contextValue, variables);
 
-  console.log(result.data.EventUpdate)
+  console.log(result.data.EventUpdate);
 
   expect(result.errors).toBeUndefined();
   expect(result.data.EventUpdate.error).toBeNull();

@@ -2,7 +2,7 @@ import { GraphQLNonNull, GraphQLID, GraphQLString, GraphQLBoolean } from 'graphq
 
 import { mutationWithClientMutationId } from 'graphql-relay';
 
-import { errorField, getObjectId, successField } from "@entria/graphql-mongo-helpers";
+import { errorField, getObjectId, successField } from '@entria/graphql-mongo-helpers';
 
 import EventModel from '../EventModel';
 
@@ -12,7 +12,7 @@ import EventType from '../EventType';
 
 const mutation = mutationWithClientMutationId({
   name: 'EventUpdate',
-  description: "Update a Event",
+  description: 'Update a Event',
   inputFields: {
     eventId: {
       type: new GraphQLNonNull(GraphQLID),
@@ -32,12 +32,11 @@ const mutation = mutationWithClientMutationId({
   },
   mutateAndGetPayload: async ({ eventId, name, start, end, allDay }) => {
     const event = await EventModel.findById({
-      _id: getObjectId(eventId), 
-      eventId,
-      name, 
-      start, 
-      end, 
-      allDay
+      _id: getObjectId(eventId),
+      name,
+      start,
+      end,
+      allDay,
     });
 
     if (!event) {
@@ -46,18 +45,22 @@ const mutation = mutationWithClientMutationId({
       };
     }
 
-    await EventModel.updateOne({
-      _id: getObjectId(eventId), 
-      eventId,
-      name, 
-      start, 
-      end, 
-      allDay
-    });
+    await EventModel.updateOne(
+      { 
+        _id: getObjectId(eventId)
+      },
+      {
+        $set: {
+          name,
+          start,
+          end,
+          allDay,
+        },
+      },
+    );
 
     return {
       id: eventId._id,
-      event: event,
       error: null,
       success: 'Event updated /o/',
     };
