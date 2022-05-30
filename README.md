@@ -83,8 +83,27 @@ yarn seed
     }
 ```
 - Event Update Mutation
-
-  [wip]
+```graphql
+   mutation {
+   EventUpdate (input: { 
+     eventId: "629521641ff2c2c8f5f2e449", 
+     name: "nice event /o/", 
+     start: "2022-07-01T00:00:00.000Z",
+     end: "2022-07-01T23:59:59.000Z",
+     allDay: false
+   }) {
+       event {
+         id
+         name
+         start
+         end
+         allDay
+       }
+        error
+        success
+      }
+    }
+```
   
 ### Queries
 - Event queries
