@@ -110,6 +110,7 @@ input EventCreateInput {
 }
 
 type EventDeletePayload {
+  id: ID
   eventId: Event
 
   """Default error field resolver."""
