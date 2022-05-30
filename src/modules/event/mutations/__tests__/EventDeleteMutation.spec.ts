@@ -30,9 +30,7 @@ it('should delete a event', async () => {
   const query = `
     mutation M ($eventId: ID!) {
       EventDelete (input: { eventId: $eventId }) {
-        eventId {
-          id
-        }
+        eventId
         error
         success
       }
