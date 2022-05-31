@@ -4,7 +4,7 @@
   "alias": ["koa-server-g.vercel.app"],
   "builds": [
     {
-      "src": "dist/app.js",
+      "src": "dist/server.js",
       "use": "@vercel/node",
       "config": {
           "includeFiles": ["dist/**"]
@@ -14,7 +14,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/app.js"
+      "dest": "/dist/server.js"
     }
   ]
 }
