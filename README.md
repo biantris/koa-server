@@ -103,6 +103,9 @@ yarn seed
 
 - https://github.com/biantris/koa-server/projects/1
 
+## demo
+[wip]
+
 ### Mutations
 - Event Create Mutation
 ```graphql
