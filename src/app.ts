@@ -8,6 +8,8 @@ import bodyParser from "koa-bodyparser";
 
 import { schema } from "./schema/schema";
 
+import koaPlayground from "graphql-playground-middleware-koa";
+
 const app = new Koa();
 const router = new Router();
 
@@ -40,6 +42,13 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
 const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
 
 router.all("/graphql", graphqlServer);
+
+router.all(
+  '/playground',
+  koaPlayground({
+    endpoint: '/graphql',
+  }),
+);
 
 app.use(bodyParser());
 app.use(cors());

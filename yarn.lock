@@ -2978,7 +2978,7 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.20.0:
+commander@^2.20.0, commander@^2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -3127,6 +3127,11 @@ cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+cssfilter@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/cssfilter/-/cssfilter-0.0.10.tgz#c6d2672632a2e5c83e013e6864a42ce8defd20ae"
+  integrity sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==
 
 cssom@^0.4.4:
   version "0.4.4"
@@ -4079,6 +4084,20 @@ graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+
+graphql-playground-html@^1.6.30:
+  version "1.6.30"
+  resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.30.tgz#14c2a8eb7fc17bfeb1a746bbb28a11e34bf0b391"
+  integrity sha512-tpCujhsJMva4aqE8ULnF7/l3xw4sNRZcSHu+R00VV+W0mfp+Q20Plvcrp+5UXD+2yS6oyCXncA+zoQJQqhGCEw==
+  dependencies:
+    xss "^1.0.6"
+
+graphql-playground-middleware-koa@^1.6.22:
+  version "1.6.22"
+  resolved "https://registry.yarnpkg.com/graphql-playground-middleware-koa/-/graphql-playground-middleware-koa-1.6.22.tgz#23937dd4dd73ae4c4cb8599b904b5ba59b4a2c3d"
+  integrity sha512-soVUM76ecq5GHk12H69Ce7afzbYuWWc73oKMOcEkmtAn/G9NUdsNvLjLdCnHQX1V0cOUeSbmcYcrebyBOIYGMQ==
+  dependencies:
+    graphql-playground-html "^1.6.30"
 
 graphql-relay@^0.9.0:
   version "0.9.0"
@@ -7971,6 +7990,14 @@ xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
+
+xss@^1.0.6:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/xss/-/xss-1.0.11.tgz#211cb82e95b5071d4c75d597283c021157ebe46a"
+  integrity sha512-EimjrjThZeK2MO7WKR9mN5ZC1CSqivSl55wvUK5EtU6acf0rzEE1pN+9ZDrFXJ82BRp3JL38pPE6S4o/rpp1zQ==
+  dependencies:
+    commander "^2.20.3"
+    cssfilter "0.0.10"
 
 y18n@^4.0.0:
   version "4.0.3"
