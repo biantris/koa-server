@@ -1,11 +1,28 @@
 ![image](https://user-images.githubusercontent.com/65451957/170831440-11ffbec9-5380-4513-9084-a6c09aa9dcdb.png)
 
-# koa-server
+<h1 align="center">
+ koa-server
+</h1>
+
+<p align="center">
 GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
+</p>
 
-See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
+<p align="center">See Front-end project https://github.com/biantris/graphql-relay-web</p>
 
-#### 🚧 WIP 🚧
+<p align="center">
+   <a href="https://github.com/biantris/koa-server/actions">
+      <img alt="Tests Passing" src="https://github.com/biantris/koa-server/actions/workflows/test.yml/badge.svg" />
+    </a>
+    <a href="https://twitter.com/intent/follow?screen_name=biantris_">
+        <img src="https://img.shields.io/twitter/follow/biantris_?style=social&logo=twitter"
+        alt="follow on Twitter">
+    </a>
+</p>
+
+<p align="center">🚧 WIP 🚧</p>
+
+### Stack
 - [x] Koa
 - [x] MongoDB
 - [x] Mongoose
