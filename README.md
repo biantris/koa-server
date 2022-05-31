@@ -8,8 +8,6 @@
 GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 </p>
 
-<p align="center">See Front-end project https://github.com/biantris/graphql-relay-web</p>
-
 <p align="center">
    <a href="https://github.com/biantris/koa-server/actions">
       <img alt="Tests Passing" src="https://github.com/biantris/koa-server/actions/workflows/test.yml/badge.svg" />
@@ -21,6 +19,8 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 </p>
 
 <p align="center">🚧 WIP 🚧</p>
+
+> **_NOTE:_**  See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
 
 ### Stack
 - [x] Koa
