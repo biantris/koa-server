@@ -84,6 +84,9 @@ yarn start
 
 # see on GraphiQL graphql interface on localhost link
 http://localhost:9000/graphql
+
+# or see graphql Playground
+http://localhost:9000/playground
 ```
 
 ### Generating the schema
