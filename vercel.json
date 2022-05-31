@@ -1,9 +1,17 @@
 {
+  "version": 2,
+  "scope": "koaserver",
+  "alias": ["koa-server.vercel.app"],
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "dist": "dist" }
+      "src": "/dist/app.js",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/dist/app.js"
     }
   ]
 }
