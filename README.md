@@ -12,6 +12,9 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
    <a href="https://github.com/biantris/koa-server/actions">
       <img alt="Tests Passing" src="https://github.com/biantris/koa-server/actions/workflows/test.yml/badge.svg" />
     </a>
+     <a href="https://codecov.io/gh/biantris/koa-server">
+      <img src="https://codecov.io/gh/biantris/koa-server/branch/main/graph/badge.svg" />
+    </a>
     <a href="https://twitter.com/intent/follow?screen_name=biantris_">
         <img src="https://img.shields.io/twitter/follow/biantris_?style=social&logo=twitter"
         alt="follow on Twitter">
