@@ -35,7 +35,38 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] SuperTest
 
 ### Project architecture
-[wip]
+```
+.
+├── graphql/
+│   └── schema.graphql
+├── script
+├── src/
+│   ├── __tests__
+│   ├── database
+│   ├── graphql
+│   ├── modules/
+│   │   ├── event/
+│   │   │   ├── __tests__
+│   │   │   ├── fixure
+│   │   │   ├── mutations/
+│   │   │   │   ├── __tests__
+│   │   │   │   ├── EventCreateMutation.ts
+│   │   │   │   ├── EventDeleteMutation.ts
+│   │   │   │   ├── EventUpdateMutation.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── EventFilterInputType.ts
+│   │   │   ├── EventLoader.ts
+│   │   │   ├── EventModel.ts
+│   │   │   └── EventType.ts
+│   │   └── node/
+│   │       └── typeRegister.ts
+│   ├── schema/
+│   │   ├── MutationType.ts
+│   │   ├── QueryType.ts
+│   │   └── schema.ts
+│   └── shared
+└── test
+```
 
 ### Getting Started
 - clone this repo
