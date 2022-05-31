@@ -1,7 +1,7 @@
 {
   "version": 2,
   "scope": "koaserver",
-  "alias": ["koa-server.vercel.app"],
+  "alias": ["koa-server-g.vercel.app"],
   "builds": [
     {
       "src": "/dist/app.js",
