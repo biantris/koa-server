@@ -41,7 +41,7 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
 
 const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
 
-router.get('/.netlify/functions', async ctx => {
+router.get('/.netlify/functions/serverless-http', async ctx => {
   ctx.body = 'Welcome koa server (~˘▾˘)~';
 });
 
