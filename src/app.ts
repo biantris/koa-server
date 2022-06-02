@@ -1,14 +1,14 @@
-import { getDataloaders } from "./graphql/loaderRegister";
+import { getDataloaders } from './graphql/loaderRegister';
 
-import Koa from "koa";
-import GraphQLHTTP from "koa-graphql";
-import Router from "koa-router";
-import cors from "@koa/cors";
-import bodyParser from "koa-bodyparser";
+import Koa from 'koa';
+import GraphQLHTTP from 'koa-graphql';
+import Router from 'koa-router';
+import cors from '@koa/cors';
+import bodyParser from 'koa-bodyparser';
 
-import { schema } from "./schema/schema";
+import { schema } from './schema/schema';
 
-import koaPlayground from "graphql-playground-middleware-koa";
+import koaPlayground from 'graphql-playground-middleware-koa';
 
 const app = new Koa();
 const router = new Router();
@@ -25,7 +25,7 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
       req,
       dataloaders,
     },
-    formatError: (error) => {
+    formatError: error => {
       console.log(error.message);
       console.log(error.locations);
       console.log(error.stack);
@@ -41,7 +41,11 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
 
 const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
 
-router.all("/graphql", graphqlServer);
+router.get('/', async ctx => {
+  ctx.body = 'Welcome koa server (~˘▾˘)~';
+});
+
+router.all('/graphql', graphqlServer);
 
 router.all(
   '/playground',
