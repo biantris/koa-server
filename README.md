@@ -165,18 +165,19 @@ yarn seed
 ### Queries
 - Event queries
 ```graphql
-   query {
-      events {
-        edges {
-          node {
-            name
-            start
-            end
-            allDay
-          }
-        }
+ query {
+  events {
+    edges {
+      node {
+        name
+        start
+        end
+        allDay
       }
     }
+  }
+}
+
 ```
 
 ## contributions
