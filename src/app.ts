@@ -45,12 +45,12 @@ router.get('/.netlify/functions', async ctx => {
   ctx.body = 'Welcome koa server (~˘▾˘)~';
 });
 
-router.all('/.netlify/functions/graphql', graphqlServer);
+router.all('/.netlify/functions/serverless-http/graphql', graphqlServer);
 
 router.all(
-  '/.netlify/functions/playground',
+  '/.netlify/functions/serverless-http/playground',
   koaPlayground({
-    endpoint: '/.netlify/functions/graphql',
+    endpoint: '/.netlify/functions/serverless-http/graphql',
   }),
 );
 
