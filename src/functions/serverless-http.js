@@ -1,5 +1,5 @@
 import serverless from 'serverless-http'
-import app from "../src/app";
+import app from "../app";
 
 // We need to define our function name for koa routes to set the correct base path
 const functionName = 'serverless-http'
