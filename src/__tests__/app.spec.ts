@@ -41,7 +41,7 @@ it('should return 200', async () => {
   };
 
   const response = await request(app.callback())
-    .post('/graphql')
+    .post('/.netlify/functions/graphql')
     .set({
       Accept: 'application/json',
       'Content-Type': 'application/json',
