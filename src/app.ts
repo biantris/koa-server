@@ -41,16 +41,16 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
 
 const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
 
-router.get('/', async ctx => {
+router.get('/.netlify/functions', async ctx => {
   ctx.body = 'Welcome koa server (~˘▾˘)~';
 });
 
-router.all('/graphql', graphqlServer);
+router.all('/.netlify/functions/graphql', graphqlServer);
 
 router.all(
-  '/playground',
+  '/.netlify/functions/playground',
   koaPlayground({
-    endpoint: '/graphql',
+    endpoint: '/.netlify/functions/graphql',
   }),
 );
 
