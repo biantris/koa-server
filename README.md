@@ -21,6 +21,8 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
     </a>
 </p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e996fa5c-d4c9-497b-98b4-0a06e81f55a9/deploy-status)](https://app.netlify.com/sites/koa-server/deploys)
+
 <p align="center">🚧 WIP 🚧</p>
 
 > **_NOTE:_**  See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
