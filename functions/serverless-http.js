@@ -1,11 +1,11 @@
 import serverless from 'serverless-http'
-import koaApp from '../src/app'
+import app from "../src/app";
 
 // We need to define our function name for koa routes to set the correct base path
 const functionName = 'serverless-http'
 
 // Initialize koa app
-const app = koaApp(functionName)
+const KoaApp = app(functionName)
 
 // Export lambda handler
-exports.handler = serverless(app)
+exports.handler = serverless(KoaApp)
