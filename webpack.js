@@ -15,6 +15,7 @@ module.exports = {
       './src/server.ts',
     ],
   },
+  optimization: { minimize: false },
   output: {
     path: path.resolve('build'),
     filename: 'graphql.js',

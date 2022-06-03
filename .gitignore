@@ -45,4 +45,6 @@ package-lock.json
 /yarn-offline-cache
 .cache
 .webpack
+/functions
+.netlify
 globalConfig.json
