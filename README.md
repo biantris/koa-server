@@ -33,6 +33,7 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] Relay
 - [x] Jest
 - [x] SuperTest
+- [ ] Code Coverage(Codecov) [see](https://github.com/biantris/koa-server/issues/129)
 
 ### Project architecture
 ```
