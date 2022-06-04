@@ -23,8 +23,6 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 
 <p align="center">🚧 WIP 🚧</p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e996fa5c-d4c9-497b-98b4-0a06e81f55a9/deploy-status)](https://app.netlify.com/sites/koa-server/deploys)
-
 > **_NOTE:_**  See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
 
 ### Stack
@@ -106,7 +104,7 @@ yarn seed
 - https://github.com/biantris/koa-server/projects/1
 
 ## demo
-🔗 https://koa-server.netlify.app/
+🔗 [wip]
 
 ### Mutations
 - Event Create Mutation
