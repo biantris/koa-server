@@ -9,6 +9,7 @@
     "@types/jest": "^27.5.1",
     "babel-node": "^0.0.1-security",
     "dataloader": "^2.1.0",
+    "dotenv": "^16.0.1",
     "dotenv-safe": "^8.2.0",
     "esbuild": "^0.12.5",
     "get-graphql-schema": "^2.1.2",
@@ -19,10 +20,14 @@
     "koa-bodyparser": "^4.3.0",
     "koa-graphql": "^0.8.0",
     "koa-router": "^7.4.0",
+    "mongodb-client-encryption": "^2.1.0",
     "mongoose": "^5.12.12",
+    "netlify-cli": "^10.4.0",
+    "netlify-lambda": "^2.0.15",
     "prettier": "^2.3.1",
     "react-dom": "^17.0.2",
     "serverless": "^3.19.0",
+    "serverless-http": "^3.0.1",
     "supertest": "6.2.3"
   },
   "devDependencies": {
@@ -67,6 +72,7 @@
     "start": "webpack --watch --progress --config webpack.js",
     "jest": "jest",
     "build": "rm -rf dist/* && babel src --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\" --ignore *.spec.js --out-dir dist --copy-files --source-maps --verbose",
+    "build:functions": "netlify-lambda build src/functions",
     "schema": "yarn build webpackx.ts ./scripts/updateSchema.ts",
     "seed": "yarn build webpackx.ts ./scripts/createSeedEvent.ts",
     "test": "jest --coverage"
