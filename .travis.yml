@@ -1,0 +1,17 @@
+language: node_js
+notifications:
+  email: false
+node_js:
+  - node
+cache:
+  directories:
+    - ~/.npm
+    - .jest
+before_script:
+  - npm install -g npm@latest
+before_install:
+  - npm run env prod
+script:
+  - yarn test
+after_success:
+  - coverage
