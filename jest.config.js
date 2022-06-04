@@ -6,6 +6,11 @@ module.exports = {
   testEnvironment: "<rootDir>/test/environment/mongodb",
   testPathIgnorePatterns: ["/node_modules/", "./dist"],
   coverageReporters: ["lcov", "html"],
+  collectCoverageFrom: [
+    '**/*.{ts,tsx}',
+    '!**/node_modules/**',
+    '!**/vendor/**',
+  ],
   setupFiles: ["<rootDir>/test/setupFiles.js"],
   setupFilesAfterEnv: ["<rootDir>/test/setupTestFramework.js"],
   resetModules: false,
