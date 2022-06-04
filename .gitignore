@@ -47,4 +47,5 @@ package-lock.json
 .webpack
 /functions
 .netlify
+.nyc_output
 globalConfig.json
