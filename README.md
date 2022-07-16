@@ -102,7 +102,7 @@ yarn seed
 
 ## to-do
 
-- https://github.com/biantris/koa-server/projects/1
+- [projects](https://github.com/biantris/koa-server/projects/1)
 
 ## demo
 🔗 [wip]
