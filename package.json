@@ -50,7 +50,7 @@
     "@types/koa": "2.13.1",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-convert": "^1.2.4",
-    "@types/koa-cors": "^0.0.0",
+    "@types/koa-cors": "^0.0.2",
     "@types/koa-graphql": "^0.8.4",
     "@types/koa-router": "7.4.2",
     "@types/webpack-dev-server": "3.11.4",
