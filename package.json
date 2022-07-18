@@ -59,7 +59,7 @@
     "babel-loader": "8.2.2",
     "clean-webpack-plugin": "3.0.0",
     "jest": "^27.4.7",
-    "jest-junit": "13.2.0",
+    "jest-junit": "14.0.0",
     "mongodb-memory-server-global": "6.9.3",
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "5.73.0",
