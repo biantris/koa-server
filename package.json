@@ -11,7 +11,7 @@
     "dataloader": "^2.1.0",
     "dotenv": "^16.0.1",
     "dotenv-safe": "^8.2.0",
-    "esbuild": "^0.12.5",
+    "esbuild": "^0.14.49",
     "get-graphql-schema": "^2.1.2",
     "graphql": "^15.5.0",
     "graphql-playground-middleware-koa": "^1.6.22",
@@ -69,7 +69,7 @@
     "webpack-node-externals": "3.0.0"
   },
   "scripts": {
-    "start": "webpack --watch --progress --config webpack.js",
+    "start": "webpack --watch --progress --config webpack.config.js",
     "jest": "jest",
     "build": "rm -rf dist/* && babel src --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\" --ignore *.spec.js --out-dir dist --copy-files --source-maps --verbose",
     "schema": "yarn build webpackx.ts ./scripts/updateSchema.ts",
