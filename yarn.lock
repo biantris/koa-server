@@ -2941,12 +2941,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*":
-  version "15.6.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.1.tgz#32d43390d5c62c5b6ec486a9bc9c59544de39a08"
-  integrity sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==
-
-"@types/node@^16.0.0":
+"@types/node@*", "@types/node@^16.0.0":
   version "16.11.38"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.38.tgz#be0edd097b23eace6c471c525a74b3f98803017f"
   integrity sha512-hjO/0K140An3GWDw2HJfq7gko3wWeznbjXgg+rzPdVzhe198hp4x2i1dgveAOEiFKd8sOilAxzoSJiVv5P/CUg==
@@ -3044,12 +3039,13 @@
   dependencies:
     webpack-dev-server "*"
 
-"@types/webpack-node-externals@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@types/webpack-node-externals/-/webpack-node-externals-2.5.1.tgz#0f00036bce0f405ceabc092e415b734059fe5505"
-  integrity sha512-Cwg6+FQogkImRMF5nu5bKsLoZlwNCzpEyvxIzJM0ZgkkuKP7TrmQ3suOvNKKG1O4luxXZroKGo0mMC5EN5gPBA==
+"@types/webpack-node-externals@2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@types/webpack-node-externals/-/webpack-node-externals-2.5.3.tgz#921783aadda1fe686db0a70e20e4b9548b5a3cef"
+  integrity sha512-A9JxaR8QXoYT95egET4AmCFuChyTlP8d18ZAnmSHuIMsFdS7QlCQQ8pmN/+FHgLIkm+ViE/VngltT5avLACY9A==
   dependencies:
-    "@types/webpack" "^4"
+    "@types/node" "*"
+    webpack "^5"
 
 "@types/webpack-sources@*":
   version "3.2.0"
@@ -3060,7 +3056,7 @@
     "@types/source-list-map" "*"
     source-map "^0.7.3"
 
-"@types/webpack@^4", "@types/webpack@^4.4.31":
+"@types/webpack@^4.4.31":
   version "4.41.31"
   resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.31.tgz#c35f252a3559ddf9c85c0d8b0b42019025e581aa"
   integrity sha512-/i0J7sepXFIp1ZT7FjUGi1eXMCg8HCCzLJEQkKsOtbJFontsJLolBcDC+3qxn5pPwiCt1G0ZdRmYRzNBtvpuGQ==
@@ -14666,7 +14662,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack@5.73.0:
+webpack@5.73.0, webpack@^5:
   version "5.73.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.73.0.tgz#bbd17738f8a53ee5760ea2f59dce7f3431d35d38"
   integrity sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==
