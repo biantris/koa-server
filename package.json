@@ -52,7 +52,7 @@
     "@types/koa-convert": "^1.2.4",
     "@types/koa-cors": "^0.0.2",
     "@types/koa-graphql": "^0.8.4",
-    "@types/koa-router": "7.4.2",
+    "@types/koa-router": "7.4.4",
     "@types/webpack-dev-server": "4.7.2",
     "@types/webpack-node-externals": "2.5.3",
     "babel-jest": "^28.1.0",
