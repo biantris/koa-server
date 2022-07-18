@@ -2845,10 +2845,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/koa-bodyparser@^4.3.0":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@types/koa-bodyparser/-/koa-bodyparser-4.3.4.tgz#86aca8ba2ac5896f84386f52cf02eb06563e2539"
-  integrity sha512-eNyHGkIxwJKYaZhyxzAVP3taZVWNgAw+Gzl1Zc9vdkfzoBjypTANLwOAb6tC2hGOXS5uw4O08N6jaL6MdrltqQ==
+"@types/koa-bodyparser@^4.3.7":
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/@types/koa-bodyparser/-/koa-bodyparser-4.3.7.tgz#3ac41f2dec9d97db7a6f798bbb2e2368be762714"
+  integrity sha512-21NhEp7LjZm4zbNV5alHHmrNY4J+S7B8lYTO6CzRL8ShTMnl20Gd14dRgVhAxraLaW5iZMofox+BycbuiDvj2Q==
   dependencies:
     "@types/koa" "*"
 
