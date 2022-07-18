@@ -53,7 +53,7 @@
     "@types/koa-cors": "^0.0.2",
     "@types/koa-graphql": "^0.8.4",
     "@types/koa-router": "7.4.2",
-    "@types/webpack-dev-server": "3.11.4",
+    "@types/webpack-dev-server": "4.7.2",
     "@types/webpack-node-externals": "2.5.1",
     "babel-jest": "^28.1.0",
     "babel-loader": "8.2.2",
@@ -64,7 +64,7 @@
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "5.38.1",
     "webpack-cli": "4.9.2",
-    "webpack-dev-server": "3.11.2",
+    "webpack-dev-server": "4.9.3",
     "webpack-merge": "5.8.0",
     "webpack-node-externals": "3.0.0"
   },
