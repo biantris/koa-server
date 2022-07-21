@@ -21,7 +21,7 @@
     "koa-graphql": "^0.8.0",
     "koa-router": "^12.0.0",
     "mongodb-client-encryption": "^2.1.0",
-    "mongoose": "^5.12.12",
+    "mongoose": "^6.4.6",
     "netlify-cli": "^10.10.0",
     "netlify-lambda": "^2.0.15",
     "prettier": "^2.6.2",
