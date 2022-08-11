@@ -12773,10 +12773,10 @@ serve-static@1.15.0:
     parseurl "~1.3.3"
     send "0.18.0"
 
-serverless-http@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-3.0.1.tgz#514f5c5714f8dea0335e047cdebb639601988b7a"
-  integrity sha512-VEgmMYXvlZ5PLkBAj2IIAGIw25RBsDnLu2fansuaFCmw2fXGUP1VGROfTaEJrjHpZrmvlPu1JRFDNRV8UvDFyw==
+serverless-http@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-3.0.2.tgz#998fc2e7adcbb5496addd909d013e62448284f56"
+  integrity sha512-0r4TEhb8umOmbzvn9y9aFjdWdrapyNhTHd2oz1YsCRn+9A5RV3DOj6Pl3DH8BQgHnAlG6g88hiBB6/zefnvPRg==
 
 serverless@^3.21.0:
   version "3.21.0"
