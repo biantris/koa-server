@@ -24,7 +24,7 @@
     "mongoose": "^5.12.12",
     "netlify-cli": "^10.10.0",
     "netlify-lambda": "^2.0.15",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "react-dom": "^18.2.0",
     "serverless": "^3.21.0",
     "serverless-http": "^3.0.1",
