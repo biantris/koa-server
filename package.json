@@ -28,7 +28,7 @@
     "react-dom": "^18.2.0",
     "serverless": "^3.21.0",
     "serverless-http": "^3.0.2",
-    "supertest": "6.2.3"
+    "supertest": "6.2.4"
   },
   "devDependencies": {
     "@babel/cli": "7.18.10",
