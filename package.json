@@ -22,13 +22,13 @@
     "koa-router": "^12.0.0",
     "mongodb-client-encryption": "^2.1.0",
     "mongoose": "^5.12.12",
-    "netlify-cli": "^10.10.0",
+    "netlify-cli": "^10.17.0",
     "netlify-lambda": "^2.0.15",
     "prettier": "^2.7.1",
     "react-dom": "^18.2.0",
     "serverless": "^3.21.0",
     "serverless-http": "^3.0.2",
-    "supertest": "6.2.3"
+    "supertest": "6.2.4"
   },
   "devDependencies": {
     "@babel/cli": "7.18.10",
@@ -62,9 +62,9 @@
     "jest-junit": "14.0.0",
     "mongodb-memory-server-global": "6.9.3",
     "reload-server-webpack-plugin": "1.0.1",
-    "webpack": "5.73.0",
+    "webpack": "5.74.0",
     "webpack-cli": "4.10.0",
-    "webpack-dev-server": "4.9.3",
+    "webpack-dev-server": "4.10.0",
     "webpack-merge": "5.8.0",
     "webpack-node-externals": "3.0.0"
   },
