@@ -108,7 +108,9 @@ http://localhost:9000/playground
 - [projects](https://github.com/biantris/koa-server/projects/1)
 
 ## demo
-🔗 [wip]
+- 🔗 https://koa-server-production.up.railway.app/
+- 🔗 https://koa-server-production.up.railway.app/graphql
+- 🔗 https://koa-server-production.up.railway.app/playground
 
 ### Mutations
 - Event Create Mutation
