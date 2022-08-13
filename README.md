@@ -76,15 +76,15 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - clone this repo
 ```sh
 # install dependencies
-yarn
+> yarn
 # or
-yarn install
+> yarn install
 
 # copy .env file
-cp .env.example .env
+> cp .env.example .env
 
 # start project
-yarn start
+> yarn start
 
 # see on GraphiQL graphql interface on localhost link
 http://localhost:9000/graphql
@@ -95,12 +95,12 @@ http://localhost:9000/playground
 
 ### Generating the schema
 ```sh
-yarn schema
+> yarn schema
 ```
 
 ### Create events manually
 ```sh
-yarn seed
+> yarn seed
 ```
 
 ## to-do
