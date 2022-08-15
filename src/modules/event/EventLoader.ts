@@ -1,9 +1,8 @@
-import { createLoader } from "@entria/graphql-mongo-helpers";
 
 import EventModel from "./EventModel";
 
+import { createLoader } from "../../graphql";
 import { eventFilterMapping } from "./EventFilterInputType";
-
 import { registerLoader } from "../../graphql/loaderRegister";
 
 const {
@@ -13,6 +12,7 @@ const {
   load,
   loadAll,
 } = createLoader({
+  //@ts-ignore
   model: EventModel,
   loaderName: "EventLoader",
   filterMapping: eventFilterMapping,
