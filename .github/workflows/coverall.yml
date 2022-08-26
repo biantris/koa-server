@@ -16,10 +16,8 @@ jobs:
       with:
         node-version: '16'
 
-    - name: yarn install, make test-coverage
-      run: |
-        yarn install
-        make test-coverage
+    - name: yarn install
+      run: yarn install
 
     - name: Coveralls
       uses: coverallsapp/github-action@master
