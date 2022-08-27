@@ -12,8 +12,8 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
    <a href="https://github.com/biantris/koa-server/actions">
       <img alt="Tests Passing" src="https://github.com/biantris/koa-server/actions/workflows/test.yml/badge.svg" />
     </a>
-     <a href="https://codecov.io/gh/biantris/koa-server">
-      <img src="https://codecov.io/gh/biantris/koa-server/branch/main/graph/badge.svg" />
+    <a href='https://coveralls.io/github/biantris/koa-server?branch=feat/codev'>
+      <img src='https://coveralls.io/repos/github/biantris/koa-server/badge.svg?branch=feat/codev' alt='Coverage Status' />
     </a>
     <a href="https://twitter.com/intent/follow?screen_name=biantris_">
         <img src="https://img.shields.io/twitter/follow/biantris_?style=social&logo=twitter"
@@ -34,7 +34,7 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] Relay
 - [x] Jest
 - [x] SuperTest
-- [ ] Code Coverage(Codecov) [see](https://github.com/biantris/koa-server/issues/129)
+- [x] Code Coverage(Coverall) [see](https://github.com/biantris/koa-server/issues/129)
 - [ ] Linter (Eslint)
 - [ ] Prettier
 
