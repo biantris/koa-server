@@ -44,7 +44,7 @@
     "@types/babel__core": "7.1.19",
     "@types/babel__preset-env": "7.9.2",
     "@types/koa": "2.13.5",
-    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-bodyparser": "^4.3.8",
     "@types/koa-convert": "^1.2.4",
     "@types/koa-cors": "^0.0.2",
     "@types/koa-graphql": "^0.8.4",
