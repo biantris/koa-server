@@ -39,7 +39,7 @@
     "@babel/plugin-proposal-optional-chaining": "7.18.9",
     "@babel/plugin-transform-async-to-generator": "7.18.6",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.19.1",
+    "@babel/preset-env": "7.19.3",
     "@babel/preset-typescript": "^7.18.6",
     "@types/babel__core": "7.1.19",
     "@types/babel__preset-env": "7.9.2",
