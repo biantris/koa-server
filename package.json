@@ -24,7 +24,7 @@
     "mongoose": "^5.12.12",
     "prettier": "^2.8.0",
     "react-dom": "^18.2.0",
-    "supertest": "6.3.2"
+    "supertest": "6.3.3"
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
