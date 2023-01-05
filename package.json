@@ -52,7 +52,7 @@
     "@types/webpack-dev-server": "4.7.2",
     "@types/webpack-node-externals": "2.5.3",
     "babel-jest": "^29.3.1",
-    "babel-loader": "9.1.0",
+    "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
     "coveralls": "^3.1.1",
     "jest": "^27.4.7",
