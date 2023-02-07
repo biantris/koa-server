@@ -5153,10 +5153,10 @@ mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mongodb-client-encryption@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/mongodb-client-encryption/-/mongodb-client-encryption-2.4.0.tgz#74390214d20f229f8e6bdedb40f0b69d11d84fe0"
-  integrity sha512-AKBlh20HWqUTl+US8yfJAMVchk6nD3RtBPfU6IfG7/iuK6OWQufLgBduvC/jYkLxPJU1+iMel5pSJQA0aMN+bg==
+mongodb-client-encryption@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/mongodb-client-encryption/-/mongodb-client-encryption-2.5.0.tgz#7aea8031b933bf615f15f1b06f8f9b19558e473c"
+  integrity sha512-et7DSQDhkbioK/G3FYtjML34ylLHmapM2665k7MMWCxSiXBNGovp8wSV4dRvJzXzKMfGvc/A4bJ7EcPSjxLCwg==
   dependencies:
     bindings "^1.5.0"
     node-addon-api "^4.3.0"
