@@ -50,7 +50,7 @@
     "@types/koa-graphql": "^0.8.4",
     "@types/koa-router": "7.4.4",
     "@types/webpack-dev-server": "4.7.2",
-    "@types/webpack-node-externals": "2.5.3",
+    "@types/webpack-node-externals": "3.0.0",
     "babel-jest": "^29.4.3",
     "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
