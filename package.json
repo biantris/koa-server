@@ -11,7 +11,7 @@
     "dataloader": "^2.2.2",
     "dotenv": "^16.0.3",
     "dotenv-safe": "^8.2.0",
-    "esbuild": "^0.17.8",
+    "esbuild": "^0.17.9",
     "get-graphql-schema": "^2.1.2",
     "graphql": "^15.5.0",
     "graphql-playground-middleware-koa": "^1.6.22",
