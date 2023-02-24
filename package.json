@@ -20,7 +20,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-graphql": "^0.8.0",
     "koa-router": "^12.0.0",
-    "mongodb-client-encryption": "^2.5.0",
+    "mongodb-client-encryption": "^2.6.0",
     "mongoose": "^5.12.12",
     "prettier": "^2.8.4",
     "react-dom": "^18.2.0",
