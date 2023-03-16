@@ -15,7 +15,7 @@
     "get-graphql-schema": "^2.1.2",
     "graphql": "^15.5.0",
     "graphql-playground-middleware-koa": "^1.6.22",
-    "graphql-relay": "^0.9.0",
+    "graphql-relay": "^0.10.0",
     "koa": "^2.14.1",
     "koa-bodyparser": "^4.4.0",
     "koa-graphql": "^0.8.0",
