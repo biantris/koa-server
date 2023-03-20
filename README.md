@@ -27,6 +27,7 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 > See Front-end project [graphql-relay-web](https://github.com/biantris/graphql-relay-web)
 
 ### Stack
+
 - [x] Koa
 - [x] MongoDB
 - [x] Mongoose
@@ -39,6 +40,7 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [ ] Prettier
 
 ### Project architecture
+
 ```
 .
 ├── graphql/
@@ -73,7 +75,9 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 ```
 
 ### Getting Started
+
 - clone this repo
+
 ```sh
 # install dependencies
 > yarn
@@ -94,11 +98,13 @@ http://localhost:9000/playground
 ```
 
 ### Generating the schema
+
 ```sh
 > yarn schema
 ```
 
 ### Create events manually
+
 ```sh
 > yarn seed
 ```
@@ -106,74 +112,86 @@ http://localhost:9000/playground
 ## to-do
 
 - [projects](https://github.com/biantris/koa-server/projects/1)
-![image](https://user-images.githubusercontent.com/65451957/214913343-0bcb661f-a6be-453a-ac89-b09736cc8738.png)
-
+  ![image](https://user-images.githubusercontent.com/65451957/214913343-0bcb661f-a6be-453a-ac89-b09736cc8738.png)
 
 ## demo
+
 - 🔗 https://koa-server-production.up.railway.app/
 - 🔗 https://koa-server-production.up.railway.app/graphql
 - 🔗 https://koa-server-production.up.railway.app/playground
 
 ### Mutations
+
 - Event Create Mutation
+
 ```graphql
- mutation {
-   EventCreate (input: { 
-     eventId: 564654, 
-     name: "nice event", 
-     start: "2022-07-01T00:00:00.000Z",
-     end: "2022-07-01T23:59:59.000Z",
-     allDay: false
-   }) {
-       event {
-         id
-         name
-         start
-         end
-         allDay
-       }
-        error
-        success
-      }
+mutation {
+  EventCreate(
+    input: {
+      eventId: 564654
+      name: "nice event"
+      start: "2022-07-01T00:00:00.000Z"
+      end: "2022-07-01T23:59:59.000Z"
+      allDay: false
     }
+  ) {
+    event {
+      id
+      name
+      start
+      end
+      allDay
+    }
+    error
+    success
+  }
+}
 ```
+
 - Event delete Mutation
+
 ```graphql
-  mutation {
-      EventDelete (input: { eventId: "629521641ff2c2c8f5f2e449" }) {
-        eventId
-        error
-        success
-      }
-    }
+mutation {
+  EventDelete(input: { eventId: "629521641ff2c2c8f5f2e449" }) {
+    eventId
+    error
+    success
+  }
+}
 ```
+
 - Event Update Mutation
+
 ```graphql
-   mutation {
-   EventUpdate (input: { 
-     eventId: "62952906f5c651ced019adf3", 
-     name: "nice event /o/", 
-     start: "2022-07-01T00:00:00.000Z",
-     end: "2022-07-01T23:59:59.000Z",
-     allDay: false
-   }) {
-       event {
-         id
-         name
-         start
-         end
-         allDay
-       }
-        error
-        success
-      }
+mutation {
+  EventUpdate(
+    input: {
+      eventId: "62952906f5c651ced019adf3"
+      name: "nice event /o/"
+      start: "2022-07-01T00:00:00.000Z"
+      end: "2022-07-01T23:59:59.000Z"
+      allDay: false
     }
+  ) {
+    event {
+      id
+      name
+      start
+      end
+      allDay
+    }
+    error
+    success
+  }
+}
 ```
-  
+
 ### Queries
+
 - Event queries
+
 ```graphql
- query {
+query {
   events {
     edges {
       node {
@@ -185,8 +203,8 @@ http://localhost:9000/playground
     }
   }
 }
-
 ```
 
 ## contributions
+
 Feel free to contribute to this project, if you find any bugs or improvements, open an issue and send a PR about it \o/

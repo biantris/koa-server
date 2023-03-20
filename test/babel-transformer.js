@@ -1,7 +1,7 @@
-const config = require("../babel.config");
+const config = require('../babel.config');
 
-const { createTransformer } = require("babel-jest");
+const { createTransformer } = require('babel-jest');
 
-module.exports = require("babel-jest").default.createTransformer({
+module.exports = require('babel-jest').default.createTransformer({
   ...config,
 });

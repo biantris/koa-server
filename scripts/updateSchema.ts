@@ -19,7 +19,7 @@ const cwd = process.cwd();
   ];
 
   await Promise.all([
-    ...configs.map(async config => {
+    ...configs.map(async (config) => {
       await writeFileAsync(config.path, printSchema(config.schema));
     }),
   ]);

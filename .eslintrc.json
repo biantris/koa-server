@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended"],
+  "globals": {
+    "React": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
+}

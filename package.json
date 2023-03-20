@@ -57,6 +57,8 @@
     "coveralls": "^3.1.1",
     "jest": "^27.4.7",
     "jest-junit": "15.0.0",
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4",
     "mongodb-memory-server-global": "6.9.3",
     "reload-server-webpack-plugin": "1.0.1",
     "webpack": "5.76.2",
@@ -71,6 +73,8 @@
     "build": "rm -rf dist/* && babel src --extensions \".es6,.js,.es,.jsx,.mjs,.ts,.tsx\" --ignore *.spec.js --out-dir dist --copy-files --source-maps --verbose",
     "schema": "yarn build webpackx.ts ./scripts/updateSchema.ts",
     "seed": "yarn build webpackx.ts ./scripts/createSeedEvent.ts",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "prettier": "prettier --write ."
   }
 }

@@ -55,4 +55,7 @@ export type BuiltConditionSet = {
 //   direction: SortDirection;
 // }
 
-export type LoaderFn<Context extends object> = (ctx: Context, id: DataLoaderKey) => any;
+export type LoaderFn<Context extends object> = (
+  ctx: Context,
+  id: DataLoaderKey
+) => any;

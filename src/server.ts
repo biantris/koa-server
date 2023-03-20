@@ -1,7 +1,7 @@
-import { connectDB }from './database/database';
-import dotenv from "dotenv";
-import { createServer } from "http";
-import { environment, serverConf } from "./shared";
+import { connectDB } from './database/database';
+import dotenv from 'dotenv';
+import { createServer } from 'http';
+import { environment, serverConf } from './shared';
 import app from './app';
 
 (async () => {
@@ -10,7 +10,7 @@ import app from './app';
   try {
     await connectDB();
   } catch (error) {
-    console.error("Unable to connect to database");
+    console.error('Unable to connect to database');
     process.exit(1);
   }
 

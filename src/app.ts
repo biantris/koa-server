@@ -25,7 +25,7 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
       req,
       dataloaders,
     },
-    formatError: error => {
+    formatError: (error) => {
       console.log(error.message);
       console.log(error.locations);
       console.log(error.stack);
@@ -41,7 +41,7 @@ const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
 
 const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
 
-router.get('/', async ctx => {
+router.get('/', async (ctx) => {
   ctx.body = 'Welcome koa server (~˘▾˘)~';
 });
 
@@ -51,7 +51,7 @@ router.all(
   '/playground',
   koaPlayground({
     endpoint: '/graphql',
-  }),
+  })
 );
 
 app.use(bodyParser());

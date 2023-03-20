@@ -1,5 +1,9 @@
 import request from 'supertest';
-import { clearDbAndRestartCounters, connectMongoose, disconnectMongoose } from '../../test';
+import {
+  clearDbAndRestartCounters,
+  connectMongoose,
+  disconnectMongoose,
+} from '../../test';
 import app from '../app';
 import { createEvent } from '../modules/event/fixture/createEvent';
 

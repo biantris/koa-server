@@ -1,9 +1,9 @@
-import Event, { IEvent } from "../EventModel";
-import { getCounter } from "../../../../test";
-import { DeepPartial } from "../../../../test/deepPartial";
+import Event, { IEvent } from '../EventModel';
+import { getCounter } from '../../../../test';
+import { DeepPartial } from '../../../../test/deepPartial';
 
 export const createEvent = (args: DeepPartial<IEvent> = {}) => {
-  const i = getCounter("event");
+  const i = getCounter('event');
 
   let { start, end, ...payload } = args;
 

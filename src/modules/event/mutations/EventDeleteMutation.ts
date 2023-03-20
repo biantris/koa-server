@@ -2,21 +2,25 @@ import { GraphQLNonNull, GraphQLID } from 'graphql';
 
 import { mutationWithClientMutationId } from 'graphql-relay';
 
-import { errorField, successField, getObjectId} from "@entria/graphql-mongo-helpers";
+import {
+  errorField,
+  successField,
+  getObjectId,
+} from '@entria/graphql-mongo-helpers';
 
 import EventModel from '../EventModel';
 
 const mutation = mutationWithClientMutationId({
   name: 'EventDelete',
-  description: "Delete a Event",
+  description: 'Delete a Event',
   inputFields: {
     eventId: {
       type: new GraphQLNonNull(GraphQLID),
     },
   },
-  mutateAndGetPayload: async ({ eventId }) => {    
-    const event = await EventModel.findById({ 
-      _id: getObjectId(eventId) // find event by id
+  mutateAndGetPayload: async ({ eventId }) => {
+    const event = await EventModel.findById({
+      _id: getObjectId(eventId), // find event by id
     });
 
     if (!event) {
@@ -26,7 +30,7 @@ const mutation = mutationWithClientMutationId({
     }
 
     await EventModel.deleteOne({
-      _id: getObjectId(eventId) // delete by id
+      _id: getObjectId(eventId), // delete by id
     });
 
     return {

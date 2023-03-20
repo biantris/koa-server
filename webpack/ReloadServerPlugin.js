@@ -1,5 +1,5 @@
 const cluster = require('cluster');
-const path = require('path')
+const path = require('path');
 
 const defaultOptions = {
   script: 'server.ts',
@@ -42,7 +42,7 @@ class ReloadServerPlugin {
         this.workers = [];
 
         cluster.fork();
-      },
+      }
     );
   }
 }

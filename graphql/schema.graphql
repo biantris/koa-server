@@ -1,28 +1,46 @@
-"""The root of all... queries"""
+"""
+The root of all... queries
+"""
 type Query {
-  """Fetches an object given its ID"""
+  """
+  Fetches an object given its ID
+  """
   node(
-    """The ID of an object"""
+    """
+    The ID of an object
+    """
     id: ID!
   ): Node
 
-  """Fetches objects given their IDs"""
+  """
+  Fetches objects given their IDs
+  """
   nodes(
-    """The IDs of objects"""
+    """
+    The IDs of objects
+    """
     ids: [ID!]!
   ): [Node]!
   events(after: String, first: Int, before: String, last: Int): EventConnection!
 }
 
-"""An object with an ID"""
+"""
+An object with an ID
+"""
 interface Node {
-  """The id of the object."""
+  """
+  The id of the object.
+  """
   id: ID!
 }
 
-"""A connection to a list of items."""
+"""
+A connection to a list of items.
+"""
 type EventConnection {
-  """Number of items in this connection"""
+  """
+  Number of items in this connection
+  """
   count: Int
 
   """
@@ -33,46 +51,74 @@ type EventConnection {
   """
   totalCount: Int
 
-  """Offset from start"""
+  """
+  Offset from start
+  """
   startCursorOffset: Int!
 
-  """Offset till end"""
+  """
+  Offset till end
+  """
   endCursorOffset: Int!
 
-  """Information to aid in pagination."""
+  """
+  Information to aid in pagination.
+  """
   pageInfo: PageInfoExtended!
 
-  """A list of edges."""
+  """
+  A list of edges.
+  """
   edges: [EventEdge]!
 }
 
-"""Information about pagination in a connection."""
+"""
+Information about pagination in a connection.
+"""
 type PageInfoExtended {
-  """When paginating forwards, are there more items?"""
+  """
+  When paginating forwards, are there more items?
+  """
   hasNextPage: Boolean!
 
-  """When paginating backwards, are there more items?"""
+  """
+  When paginating backwards, are there more items?
+  """
   hasPreviousPage: Boolean!
 
-  """When paginating backwards, the cursor to continue."""
+  """
+  When paginating backwards, the cursor to continue.
+  """
   startCursor: String
 
-  """When paginating forwards, the cursor to continue."""
+  """
+  When paginating forwards, the cursor to continue.
+  """
   endCursor: String
 }
 
-"""An edge in a connection."""
+"""
+An edge in a connection.
+"""
 type EventEdge {
-  """The item at the end of the edge"""
+  """
+  The item at the end of the edge
+  """
   node: Event
 
-  """A cursor for use in pagination"""
+  """
+  A cursor for use in pagination
+  """
   cursor: String!
 }
 
-"""event data"""
+"""
+event data
+"""
 type Event implements Node {
-  """The ID of an object"""
+  """
+  The ID of an object
+  """
   id: ID!
   name: String
   start: String
@@ -80,25 +126,37 @@ type Event implements Node {
   allDay: Boolean
 }
 
-"""Root of ... mutations"""
+"""
+Root of ... mutations
+"""
 type Mutation {
-  """Create a new Event"""
+  """
+  Create a new Event
+  """
   EventCreate(input: EventCreateInput!): EventCreatePayload
 
-  """Delete a Event"""
+  """
+  Delete a Event
+  """
   EventDelete(input: EventDeleteInput!): EventDeletePayload
 
-  """Update a Event"""
+  """
+  Update a Event
+  """
   EventUpdate(input: EventUpdateInput!): EventUpdatePayload
 }
 
 type EventCreatePayload {
   event: Event
 
-  """Default error field resolver."""
+  """
+  Default error field resolver.
+  """
   error: String
 
-  """Default success field resolver."""
+  """
+  Default success field resolver.
+  """
   success: String
   clientMutationId: String
 }
@@ -115,10 +173,14 @@ input EventCreateInput {
 type EventDeletePayload {
   eventId: ID
 
-  """Default error field resolver."""
+  """
+  Default error field resolver.
+  """
   error: String
 
-  """Default success field resolver."""
+  """
+  Default success field resolver.
+  """
   success: String
   clientMutationId: String
 }
@@ -131,10 +193,14 @@ input EventDeleteInput {
 type EventUpdatePayload {
   event: Event
 
-  """Default error field resolver."""
+  """
+  Default error field resolver.
+  """
   error: String
 
-  """Default success field resolver."""
+  """
+  Default success field resolver.
+  """
   success: String
   clientMutationId: String
 }

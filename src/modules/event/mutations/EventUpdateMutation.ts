@@ -1,8 +1,17 @@
-import { GraphQLNonNull, GraphQLID, GraphQLString, GraphQLBoolean } from 'graphql';
+import {
+  GraphQLNonNull,
+  GraphQLID,
+  GraphQLString,
+  GraphQLBoolean,
+} from 'graphql';
 
 import { mutationWithClientMutationId } from 'graphql-relay';
 
-import { errorField, getObjectId, successField } from '@entria/graphql-mongo-helpers';
+import {
+  errorField,
+  getObjectId,
+  successField,
+} from '@entria/graphql-mongo-helpers';
 
 import EventModel from '../EventModel';
 
@@ -46,8 +55,8 @@ const mutation = mutationWithClientMutationId({
     }
 
     await EventModel.updateOne(
-      { 
-        _id: getObjectId(eventId)
+      {
+        _id: getObjectId(eventId),
       },
       {
         $set: {
@@ -56,7 +65,7 @@ const mutation = mutationWithClientMutationId({
           end,
           allDay,
         },
-      },
+      }
     );
 
     return {

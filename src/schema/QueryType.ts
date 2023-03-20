@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLNonNull } from 'graphql';
 
-import { connectionArgs } from "../graphql/connectionDefinitions";
+import { connectionArgs } from '../graphql/connectionDefinitions';
 
 import { nodesField, nodeField } from '../modules/node/typeRegister';
 import * as EventLoader from '../modules/event/EventLoader';
@@ -17,7 +17,8 @@ const QueryType = new GraphQLObjectType({
       args: {
         ...connectionArgs,
       },
-      resolve: async (_, args, context) => await EventLoader.loadAll(context, args),
+      resolve: async (_, args, context) =>
+        await EventLoader.loadAll(context, args),
     },
   }),
 });
