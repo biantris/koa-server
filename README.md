@@ -36,8 +36,8 @@ GraphQL Back-end Server with Relay, Koa, MongoDB and Mongoose
 - [x] Jest
 - [x] SuperTest
 - [x] Code Coverage(Coverall) [see](https://github.com/biantris/koa-server/issues/129)
-- [ ] Linter (Eslint)
-- [ ] Prettier
+- [x] Linter (Eslint)
+- [x] Prettier
 
 ### Project architecture
 
