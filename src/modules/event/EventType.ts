@@ -1,33 +1,33 @@
-import { GraphQLBoolean, GraphQLObjectType, GraphQLString } from "graphql";
+import { GraphQLBoolean, GraphQLObjectType, GraphQLString } from 'graphql';
 
-import { globalIdField } from "graphql-relay";
+import { globalIdField } from 'graphql-relay';
 
-import { connectionDefinitions } from "../../graphql";
+import { connectionDefinitions } from '../../graphql';
 
-import { load } from "./EventLoader";
+import { load } from './EventLoader';
 
-import { nodeInterface, registerTypeLoader } from "../node/typeRegister";
+import { nodeInterface, registerTypeLoader } from '../node/typeRegister';
 
 const EventType = new GraphQLObjectType({
-  name: "Event",
-  description: "event data",
+  name: 'Event',
+  description: 'event data',
   fields: () => ({
-    id: globalIdField("Event"),
+    id: globalIdField('Event'),
     name: {
       type: GraphQLString,
-      resolve: event => event.name,
+      resolve: (event) => event.name,
     },
     start: {
-        type: GraphQLString,
-        resolve: event => event.start.toISOString(),
+      type: GraphQLString,
+      resolve: (event) => event.start.toISOString(),
     },
     end: {
-        type: GraphQLString,
-        resolve: event => event.end.toISOString(),
+      type: GraphQLString,
+      resolve: (event) => event.end.toISOString(),
     },
     allDay: {
-        type: GraphQLBoolean,
-        resolve: event => event.allDay,
+      type: GraphQLBoolean,
+      resolve: (event) => event.allDay,
     },
   }),
   interfaces: () => [nodeInterface],
@@ -38,6 +38,6 @@ registerTypeLoader(EventType, load);
 export default EventType;
 
 export const EventConnection = connectionDefinitions({
-  name: "Event",
+  name: 'Event',
   nodeType: EventType,
 });

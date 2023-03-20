@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import { config } from "../config";
+import mongoose from 'mongoose';
+import { config } from '../config';
 
 export const connectDB = () => {
   mongoose.connect(config.MONGO_URI, {
@@ -9,6 +9,6 @@ export const connectDB = () => {
   });
 
   const db = mongoose.connection;
-  db.on("error", console.error.bind(console, "connection error:"));
-  db.once("open", () => console.log("Database connected ✅"));
+  db.on('error', console.error.bind(console, 'connection error:'));
+  db.once('open', () => console.log('Database connected ✅'));
 };

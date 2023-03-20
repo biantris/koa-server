@@ -1,8 +1,13 @@
-import { GraphQLNonNull, GraphQLID, GraphQLString, GraphQLBoolean } from 'graphql';
+import {
+  GraphQLNonNull,
+  GraphQLID,
+  GraphQLString,
+  GraphQLBoolean,
+} from 'graphql';
 
 import { mutationWithClientMutationId } from 'graphql-relay';
 
-import { errorField, successField } from "@entria/graphql-mongo-helpers";
+import { errorField, successField } from '@entria/graphql-mongo-helpers';
 
 import EventModel from '../EventModel';
 
@@ -12,7 +17,7 @@ import EventType from '../EventType';
 
 const mutation = mutationWithClientMutationId({
   name: 'EventCreate',
-  description: "Create a new Event",
+  description: 'Create a new Event',
   inputFields: {
     eventId: {
       type: new GraphQLNonNull(GraphQLID),
@@ -31,8 +36,13 @@ const mutation = mutationWithClientMutationId({
     },
   },
   mutateAndGetPayload: async ({ eventId, name, start, end, allDay }) => {
-
-    const event = await new EventModel({eventId, name, start, end, allDay}).save();
+    const event = await new EventModel({
+      eventId,
+      name,
+      start,
+      end,
+      allDay,
+    }).save();
 
     if (!event) {
       return {
@@ -42,7 +52,7 @@ const mutation = mutationWithClientMutationId({
 
     return {
       error: null,
-      success: 'Event created \o/',
+      success: 'Event created o/',
     };
   },
 

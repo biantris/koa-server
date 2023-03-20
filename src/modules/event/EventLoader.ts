@@ -1,9 +1,8 @@
+import EventModel from './EventModel';
 
-import EventModel from "./EventModel";
-
-import { createLoader } from "../../graphql";
-import { eventFilterMapping } from "./EventFilterInputType";
-import { registerLoader } from "../../graphql/loaderRegister";
+import { createLoader } from '../../graphql';
+import { eventFilterMapping } from './EventFilterInputType';
+import { registerLoader } from '../../graphql/loaderRegister';
 
 const {
   Wrapper: Event,
@@ -14,11 +13,11 @@ const {
 } = createLoader({
   //@ts-ignore
   model: EventModel,
-  loaderName: "EventLoader",
+  loaderName: 'EventLoader',
   filterMapping: eventFilterMapping,
 });
 
 export { getLoader, clearCache, load, loadAll };
 export default Event;
 
-registerLoader("EventLoader", getLoader);
+registerLoader('EventLoader', getLoader);

@@ -38,20 +38,26 @@ it('should delete a event', async () => {
   `;
 
   const variables = {
-    eventId: toGlobalId("Event", event._id),
+    eventId: toGlobalId('Event', event._id),
   };
 
   const rootValue = {};
 
   const contextValue = { dataloaders: getDataloaders() };
 
-  const result = await graphql(schema, query, rootValue, contextValue, variables);
+  const result = await graphql(
+    schema,
+    query,
+    rootValue,
+    contextValue,
+    variables
+  );
 
   // console.log(result.data);
 
   expect(result.errors).toBeUndefined();
   expect(result.data.EventDelete.error).toBeNull();
-  
+
   expect(result.data.EventDelete.eventId).toBeNull();
   expect(result.data.EventDelete.success).toBe('Event removed ;-;');
 

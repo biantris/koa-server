@@ -2,9 +2,13 @@ import { graphql } from 'graphql';
 
 import { toGlobalId } from 'graphql-relay';
 
-import { clearDbAndRestartCounters, connectMongoose, disconnectMongoose } from '../../../../test';
+import {
+  clearDbAndRestartCounters,
+  connectMongoose,
+  disconnectMongoose,
+} from '../../../../test';
 
-import { getDataloaders } from "../../../graphql/loaderRegister";
+import { getDataloaders } from '../../../graphql/loaderRegister';
 
 import { schema } from '../../../schema/schema';
 
@@ -35,7 +39,7 @@ it('should return a event infos', async () => {
     }
   `;
 
-  const globalId = toGlobalId("Event", event._id);
+  const globalId = toGlobalId('Event', event._id);
 
   const variables = {
     id: globalId,
@@ -43,11 +47,17 @@ it('should return a event infos', async () => {
 
   const rootValue = {};
 
-  const contextValue = { dataloaders: getDataloaders() }
+  const contextValue = { dataloaders: getDataloaders() };
 
-  const result = await graphql(schema, query, rootValue, contextValue, variables);
+  const result = await graphql(
+    schema,
+    query,
+    rootValue,
+    contextValue,
+    variables
+  );
 
-  console.log(result.data)
+  console.log(result.data);
   expect(result.errors).toBeUndefined();
   expect(result.data.event.name).toBe(event.name);
 });

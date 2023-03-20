@@ -24,7 +24,7 @@ const EventSchema = new Schema(
   {
     collection: 'Event',
     timestamps: true,
-  },
+  }
 );
 
 export interface IEvent extends Document {

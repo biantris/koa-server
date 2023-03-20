@@ -5,20 +5,26 @@ import { LoaderFn, BuiltConditionSet } from './types';
 
 import { buildAggregatePipeline } from './buildAggregatePipeline';
 
-type WithConnectionAggregateConditions = { defaultConditions?: object; builtMongoConditions: BuiltConditionSet };
+type WithConnectionAggregateConditions = {
+  defaultConditions?: object;
+  builtMongoConditions: BuiltConditionSet;
+};
 
 export const withConnectionAggregate =
   <Context extends object>(
     model: Model<any>,
     loader: LoaderFn<Context>,
-    condFn: (...p: any[]) => WithConnectionAggregateConditions,
+    condFn: (...p: any[]) => WithConnectionAggregateConditions
   ) =>
   (...params: any[]) => {
     const { defaultConditions = {}, builtMongoConditions } = condFn(...params);
 
     const [context, args] = params;
 
-    const aggregatePipeline = buildAggregatePipeline({ defaultConditions, builtMongoConditions });
+    const aggregatePipeline = buildAggregatePipeline({
+      defaultConditions,
+      builtMongoConditions,
+    });
 
     const aggregate = model.aggregate(aggregatePipeline);
 

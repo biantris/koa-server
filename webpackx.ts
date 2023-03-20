@@ -1,7 +1,7 @@
-import path from "path";
-import { spawn } from "child_process";
+import path from 'path';
+import { spawn } from 'child_process';
 
-import webpack from "webpack";
+import webpack from 'webpack';
 
 import config, { outputPath, outputFilename } from './webpack/webpack.config';
 
@@ -22,14 +22,14 @@ const compilerRunPromise = (compiler) =>
 
 export function onExit(childProcess: ChildProcess): Promise<void> {
   return new Promise((resolve, reject) => {
-    childProcess.once("exit", (code: number) => {
+    childProcess.once('exit', (code: number) => {
       if (code === 0) {
         resolve(undefined);
       } else {
         reject(new Error(`Exit with error code: ${code}`));
       }
     });
-    childProcess.once("error", (err: Error) => {
+    childProcess.once('error', (err: Error) => {
       reject(err);
     });
   });
@@ -64,7 +64,7 @@ const runProgram = async () => {
     await runProgram();
   } catch (err) {
     // eslint-disable-next-line
-    console.log("err: ", err);
+    console.log('err: ', err);
     process.exit(1);
   }
   process.exit(0);

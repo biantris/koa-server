@@ -4,7 +4,4 @@ var environment = process.env.NODE_ENV || 'development';
 
 var serverConf = SERVER_ENV[environment];
 
-export {
-    environment,
-    serverConf,
-};
+export { environment, serverConf };

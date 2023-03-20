@@ -1,12 +1,17 @@
 import { graphql } from 'graphql';
 
-import { clearDbAndRestartCounters, connectMongoose, disconnectMongoose, sanitizeTestObject } from '../../../../test';
+import {
+  clearDbAndRestartCounters,
+  connectMongoose,
+  disconnectMongoose,
+  sanitizeTestObject,
+} from '../../../../test';
 
 import { schema } from '../../../schema/schema';
 
 import { createEvent } from '../fixture/createEvent';
 
-import { getDataloaders } from "../../../graphql/loaderRegister";
+import { getDataloaders } from '../../../graphql/loaderRegister';
 
 beforeAll(connectMongoose);
 
@@ -46,11 +51,17 @@ it('should query all events', async () => {
   `;
 
   const rootValue = {};
-  const contextValue = { dataloaders: getDataloaders() }
+  const contextValue = { dataloaders: getDataloaders() };
   const variables = {};
 
-  const result = await graphql(schema, query, rootValue, contextValue, variables);
-  
+  const result = await graphql(
+    schema,
+    query,
+    rootValue,
+    contextValue,
+    variables
+  );
+
   expect(result.errors).toBeUndefined();
 
   // eslint-disable-next-line
