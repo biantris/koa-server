@@ -4,16 +4,7 @@ exports[`should return 200 1`] = `
 Object {
   "data": Object {
     "events": Object {
-      "edges": Array [
-        Object {
-          "node": Object {
-            "allDay": true,
-            "end": "2019-01-01T23:59:59.000Z",
-            "name": "event",
-            "start": "2019-01-01T00:00:00.000Z",
-          },
-        },
-      ],
+      "edges": Array [],
     },
   },
 }

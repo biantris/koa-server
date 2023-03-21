@@ -1,51 +1,36 @@
-import { getDataloaders } from './graphql/loaderRegister';
-
-import Koa from 'koa';
-import GraphQLHTTP from 'koa-graphql';
-import Router from 'koa-router';
 import cors from '@koa/cors';
+import Router from '@koa/router';
+import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 
 import { schema } from './schema/schema';
 
+import {
+  getGraphQLParameters,
+  processRequest,
+  renderGraphiQL,
+  sendResult,
+  shouldRenderGraphiQL,
+} from 'graphql-helix';
+
 import koaPlayground from 'graphql-playground-middleware-koa';
+
+import { getContext } from './context';
 
 const app = new Koa();
 const router = new Router();
 
-const graphqlSettingsPerReq = async (req, ctx, koaContext) => {
-  const { event } = koaContext;
-  const dataloaders = getDataloaders();
+app.use(bodyParser());
 
-  return {
-    graphiql: true,
-    schema,
-    context: {
-      event,
-      req,
-      dataloaders,
-    },
-    formatError: (error) => {
-      console.log(error.message);
-      console.log(error.locations);
-      console.log(error.stack);
+app.on('error', (err) => {
+  console.log('app error: ', err);
+});
 
-      return {
-        message: error.message,
-        locations: error.locations,
-        stack: error.stack,
-      };
-    },
-  };
-};
-
-const graphqlServer = GraphQLHTTP(graphqlSettingsPerReq);
+app.use(cors());
 
 router.get('/', async (ctx) => {
   ctx.body = 'Welcome koa server (~˘▾˘)~';
 });
-
-router.all('/graphql', graphqlServer);
 
 router.all(
   '/playground',
@@ -54,8 +39,38 @@ router.all(
   })
 );
 
-app.use(bodyParser());
-app.use(cors());
+router.all('/graphql', async (ctx) => {
+  //const { user } = await getUser(ctx.header.authorization); soon :)
+  const request = {
+    body: ctx.request.body,
+    headers: ctx.req.headers,
+    method: ctx.request.method,
+    query: ctx.request.query,
+  };
+
+  if (shouldRenderGraphiQL(request)) {
+    ctx.body = renderGraphiQL({});
+  } else {
+    const { operationName, query, variables } = getGraphQLParameters(request);
+
+    const result = await processRequest({
+      operationName,
+      query,
+      variables,
+      request,
+      schema,
+      contextFactory: () => {
+        return getContext({
+          req: request,
+        });
+      },
+    });
+
+    ctx.respond = false;
+    sendResult(result, ctx.res);
+  }
+});
+
 app.use(router.routes()).use(router.allowedMethods());
 
 export default app;

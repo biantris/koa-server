@@ -8,10 +8,10 @@ import {
 
 import { createEvent } from '../../fixture/createEvent';
 
-import { getDataloaders } from '../../../../graphql/loaderRegister';
+import { getDataloaders } from '../../../../graphql-helpers/loaderRegister';
 
-import { schema } from '../../../../schema/schema';
 import { toGlobalId } from 'graphql-relay';
+import { schema } from '../../../../schema/schema';
 
 beforeAll(connectMongoose);
 
@@ -53,15 +53,15 @@ it('should update a event', async () => {
 
   const rootValue = {};
 
-  const contextValue = { dataloaders: getDataloaders() };
+  const context = { dataloaders: getDataloaders() };
 
-  const result = await graphql(
+  const result = await graphql({
     schema,
-    query,
+    source: query,
     rootValue,
-    contextValue,
-    variables
-  );
+    contextValue: context,
+    variableValues: variables,
+  });
 
   console.log(result.data.EventUpdate);
 
