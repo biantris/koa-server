@@ -5004,11 +5004,6 @@ interpret@^3.1.1:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-3.1.1.tgz#5be0ceed67ca79c6c4bc5cf0d7ee843dcea110c4"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-ip@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
-  integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
-
 ip@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ip/-/ip-2.0.0.tgz#4cf4ab182fee2314c75ede1276f8c80b479936da"
@@ -6191,10 +6186,10 @@ mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mongodb-client-encryption@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/mongodb-client-encryption/-/mongodb-client-encryption-2.6.0.tgz#1f319bc68bca35ab14ec5a3d097856642fc9e85e"
-  integrity sha512-2fJFZLX+VK7zOyMkOy/LAH2TO1TpBLzPW0YzIujhsng//KRcdvro/JmQ3R/iwptjZJSrPOOZcVUq9yi5KY5akg==
+mongodb-client-encryption@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/mongodb-client-encryption/-/mongodb-client-encryption-2.7.1.tgz#d5d04edeb2f3a54c406c9a54bbb545cf90c42640"
+  integrity sha512-LN1udDf9nZ/paUcuY2AATIVWKf7oGHb2IKMQqGu/7iiqpNlV0M6xjbQix0bxEQvzZZW0T9PG6PN8mYeMR+YDnA==
   dependencies:
     bindings "^1.5.0"
     node-addon-api "^4.3.0"
@@ -7285,15 +7280,7 @@ sockjs@^0.3.24:
     uuid "^8.3.2"
     websocket-driver "^0.7.4"
 
-socks@^2.6.1:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/socks/-/socks-2.6.2.tgz#ec042d7960073d40d94268ff3bb727dc685f111a"
-  integrity sha512-zDZhHhZRY9PxRruRMR7kMhnf3I8hDs4S3f9RecfnGxvcBHQcKcIH/oUcEWffsfl1XxdYlA7nnlGbbTvPz9D8gA==
-  dependencies:
-    ip "^1.1.5"
-    smart-buffer "^4.2.0"
-
-socks@^2.7.1:
+socks@^2.6.1, socks@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/socks/-/socks-2.7.1.tgz#d8e651247178fde79c0663043e07240196857d55"
   integrity sha512-7maUZy1N7uo6+WVEX6psASxtNlKaNVMlGQKkG/63nEDdLOWNbiUMoLK7X4uYoLhQstau72mLgfEWcXcwsaHbYQ==
