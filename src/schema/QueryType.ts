@@ -1,10 +1,10 @@
-import { GraphQLObjectType, GraphQLNonNull } from 'graphql';
+import { GraphQLNonNull, GraphQLObjectType } from 'graphql';
 
-import { connectionArgs } from '../graphql/connectionDefinitions';
+import { connectionArgs } from '../graphql-helpers/connectionDefinitions';
 
-import { nodesField, nodeField } from '../modules/node/typeRegister';
 import * as EventLoader from '../modules/event/EventLoader';
 import { EventConnection } from '../modules/event/EventType';
+import { nodeField, nodesField } from '../modules/node/typeRegister';
 
 const QueryType = new GraphQLObjectType({
   name: 'Query',

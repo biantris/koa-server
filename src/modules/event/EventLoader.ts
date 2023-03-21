@@ -1,8 +1,8 @@
 import EventModel from './EventModel';
 
-import { createLoader } from '../../graphql';
+import { createLoader } from '../../graphql-helpers';
+import { registerLoader } from '../../graphql-helpers/loaderRegister';
 import { eventFilterMapping } from './EventFilterInputType';
-import { registerLoader } from '../../graphql/loaderRegister';
 
 const {
   Wrapper: Event,
