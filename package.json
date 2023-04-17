@@ -57,7 +57,7 @@
     "coveralls": "^3.1.1",
     "eslint": "^8.38.0",
     "jest": "^27.4.7",
-    "jest-junit": "15.0.0",
+    "jest-junit": "16.0.0",
     "mongodb-memory-server": "8.12.2",
     "prettier": "^2.8.7",
     "reload-server-webpack-plugin": "1.0.1",
