@@ -61,7 +61,7 @@
     "mongodb-memory-server": "8.12.2",
     "prettier": "^2.8.8",
     "reload-server-webpack-plugin": "1.0.1",
-    "webpack": "5.82.1",
+    "webpack": "5.83.1",
     "webpack-cli": "5.1.1",
     "webpack-dev-server": "4.15.0",
     "webpack-merge": "5.8.0",
