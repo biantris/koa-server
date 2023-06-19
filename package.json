@@ -12,7 +12,7 @@
     "dataloader": "^2.2.2",
     "dotenv": "^16.1.4",
     "dotenv-safe": "^8.2.0",
-    "esbuild": "^0.18.3",
+    "esbuild": "^0.18.4",
     "get-graphql-schema": "^2.1.2",
     "graphql": "^16.6.0",
     "graphql-helix": "^1.13.0",
