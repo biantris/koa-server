@@ -19,7 +19,7 @@
     "graphql-playground-middleware-koa": "^1.6.22",
     "graphql-relay": "^ 0.10.0",
     "koa": "^2.14.2",
-    "koa-bodyparser": "^4.4.0",
+    "koa-bodyparser": "^4.4.1",
     "koa-router": "^12.0.0",
     "mongodb-client-encryption": "^2.8.0",
     "mongoose": "^7.3.1",
