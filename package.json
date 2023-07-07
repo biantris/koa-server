@@ -22,7 +22,7 @@
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^12.0.0",
     "mongodb-client-encryption": "^2.8.0",
-    "mongoose": "^7.3.1",
+    "mongoose": "^7.3.2",
     "prettier": "^3.0.0",
     "react-dom": "^18.2.0",
     "supertest": "6.3.3"
