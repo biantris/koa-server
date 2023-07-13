@@ -28,7 +28,7 @@
     "supertest": "6.3.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.22.6",
+    "@babel/cli": "7.22.9",
     "@babel/core": "7.22.8",
     "@babel/node": "7.22.6",
     "@babel/plugin-proposal-async-generator-functions": "7.20.7",
