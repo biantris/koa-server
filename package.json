@@ -48,7 +48,7 @@
     "@types/koa-bodyparser": "^4.3.10",
     "@types/koa-convert": "^1.2.4",
     "@types/koa__cors": "^4.0.1",
-    "@types/koa__router": "^12.0.0",
+    "@types/koa__router": "^12.0.1",
     "@types/webpack-dev-server": "4.7.2",
     "@types/webpack-node-externals": "3.0.0",
     "babel-jest": "^29.7.0",
