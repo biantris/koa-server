@@ -2909,10 +2909,10 @@
   dependencies:
     webpack-dev-server "*"
 
-"@types/webpack-node-externals@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz#4b85b93cde99a16779c4b1faebaa23c3ef46ec0b"
-  integrity sha512-Z3ELJiH0aZjxkoymT2nrGSmCF/CYjiqC0bpv4/DWy9h7e6gP4B2qmKZFHJFermeF0SYURbSw0puddQl9dMMV0w==
+"@types/webpack-node-externals@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/webpack-node-externals/-/webpack-node-externals-3.0.1.tgz#8535562076430f4c315abab6c99c5d5be9a84756"
+  integrity sha512-qUW0dOwn+ohnflSrDnscXx25VMli+IRFd9D6B0u7VzWU/DNg6zwqjh6gC6vNWyB7VoPHOYmEAa9pAmoSnYFrXg==
   dependencies:
     "@types/node" "*"
     webpack "^5"
