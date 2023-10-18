@@ -2091,10 +2091,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa__router@^12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@types/koa__router/-/koa__router-12.0.1.tgz#e77b0c4081b1c56b004baf92afdd31766d5701f3"
-  integrity sha512-uqV+v6pCsfLZwK+Ar6XavKSZ6Cbsgw12bCEX9L0IKHj81LTWXcrayxJWkLtez5vOMQlq+ax+lZcuCyh9CgxYGw==
+"@types/koa__router@^12.0.2":
+  version "12.0.2"
+  resolved "https://registry.yarnpkg.com/@types/koa__router/-/koa__router-12.0.2.tgz#a5552a5267b947f0df485f970db3ad835460212b"
+  integrity sha512-xoiDqyIggk1hPOhD980SMhPYqUssvHkIh6CV/j00WemrYqqNM1jMellWJofEKm0ZbgJUyWunFvCHil20dQEhMg==
   dependencies:
     "@types/koa" "*"
 
