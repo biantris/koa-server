@@ -2063,10 +2063,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-convert@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@types/koa-convert/-/koa-convert-1.2.5.tgz#7e3d39e89c21793d0a13f12a564fcae7cc82c8a2"
-  integrity sha512-TfI/HTQM+hx7TPnmRV/yQ67EUfxhE3APPnMoYPoCeWKMbRA9t6ASvO5/WEno25q+mYI5nwa6qZhrZOT251MrUw==
+"@types/koa-convert@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@types/koa-convert/-/koa-convert-1.2.6.tgz#b4626671b40fbde71d6e746ad6914c8040f97d65"
+  integrity sha512-k2FN2VtEnWRiLkgYYgVdzrs2ugsxchX/UQp4VjecYWGNRkQxG/DC4A/cLlAbIwle5okeIzHKrvD2TytmjzaNjQ==
   dependencies:
     "@types/koa" "*"
 
