@@ -47,7 +47,7 @@
     "@types/koa": "2.13.10",
     "@types/koa-bodyparser": "^4.3.11",
     "@types/koa-convert": "^1.2.6",
-    "@types/koa__cors": "^4.0.1",
+    "@types/koa__cors": "^4.0.2",
     "@types/koa__router": "^12.0.2",
     "@types/webpack-dev-server": "4.7.2",
     "@types/webpack-node-externals": "3.0.2",
