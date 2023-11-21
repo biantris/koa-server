@@ -1815,10 +1815,10 @@
   dependencies:
     "@babel/types" "^7.0.0"
 
-"@types/babel__preset-env@7.9.5":
-  version "7.9.5"
-  resolved "https://registry.yarnpkg.com/@types/babel__preset-env/-/babel__preset-env-7.9.5.tgz#5140297928cdfc518a0736397b1f2caf11dbed1e"
-  integrity sha512-MM0iouN2V5gX13rLEdshGVkgm+Ro+qIYHvSEQz9EzjmHfTore9WEXkqH31hne/Q/6CI29XlulNeWL8vjghMZ3w==
+"@types/babel__preset-env@7.9.6":
+  version "7.9.6"
+  resolved "https://registry.yarnpkg.com/@types/babel__preset-env/-/babel__preset-env-7.9.6.tgz#0b10be30e031077285e69a64b23457420b6123ce"
+  integrity sha512-PaOA2V4J3CZZopQaTGT1e8WEWCqHWc1k12zLlci4T9eR2lQIlA/GbnVbloFDqYVFr1BNiCXnotH32Up8WdgTxQ==
 
 "@types/babel__template@*":
   version "7.4.1"
