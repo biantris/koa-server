@@ -10,7 +10,7 @@
     "@types/supertest": "^6.0.0",
     "babel-node": "^0.0.1-security",
     "dataloader": "^2.2.2",
-    "dotenv": "^16.4.1",
+    "dotenv": "^16.4.5",
     "dotenv-safe": "^9.1.0",
     "esbuild": "^0.20.2",
     "get-graphql-schema": "^2.1.2",
