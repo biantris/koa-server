@@ -41,7 +41,7 @@
     "@babel/plugin-transform-async-to-generator": "7.24.1",
     "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
+    "@babel/preset-typescript": "^7.24.1",
     "@types/babel__core": "7.20.5",
     "@types/babel__preset-env": "7.9.5",
     "@types/koa": "2.14.0",
