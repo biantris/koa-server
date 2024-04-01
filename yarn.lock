@@ -3976,10 +3976,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
   integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
 
-follow-redirects@^1.15.3:
-  version "1.15.3"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
-  integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
+follow-redirects@^1.15.6:
+  version "1.15.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
+  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -5712,16 +5712,16 @@ mongodb-connection-string-url@^3.0.0:
     "@types/whatwg-url" "^11.0.2"
     whatwg-url "^13.0.0"
 
-mongodb-memory-server-core@9.1.7:
-  version "9.1.7"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-9.1.7.tgz#f920a5dd4ecbdeb846323a935e2cc08b03dffb56"
-  integrity sha512-q8geqCmt5hGuxaDhRo03ZUB0ITr6lnJ3jffdNiC4nDq13WbHUfY2A1RQq3OHDbdrY6aRYvZphx2bcXYBFRis3A==
+mongodb-memory-server-core@9.1.8:
+  version "9.1.8"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-9.1.8.tgz#b281015aada6f228203f4e9bb56eca43ed76d3f5"
+  integrity sha512-iCWwaP7De4lm1lRCUKB2ffUYr6GB0I/cj6fK0NV9dgwc9fA3xapHTTT/cPYRNx29M5gmAOSaOpUgjP7i2GZ/LQ==
   dependencies:
     async-mutex "^0.4.0"
     camelcase "^6.3.0"
     debug "^4.3.4"
     find-cache-dir "^3.3.2"
-    follow-redirects "^1.15.3"
+    follow-redirects "^1.15.6"
     https-proxy-agent "^7.0.2"
     mongodb "^5.9.1"
     new-find-package-json "^2.0.0"
@@ -5730,12 +5730,12 @@ mongodb-memory-server-core@9.1.7:
     tslib "^2.6.2"
     yauzl "^2.10.0"
 
-mongodb-memory-server@9.1.7:
-  version "9.1.7"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-9.1.7.tgz#550de40dd77ccb8892fe23c0523c8cafbaab5751"
-  integrity sha512-Yxw1cUMoCKTK6jxk4cKG07P+Z/qOmuCVyt3ScIDaoHeOCbOlg2sEtXYO9vEK/tzpj/1KHdDStU2oYrsJ8Fvm0A==
+mongodb-memory-server@9.1.8:
+  version "9.1.8"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-9.1.8.tgz#165979e1da6aaec2d71694592a37d621182625b3"
+  integrity sha512-QumPTOlWWWzgW6dtV4bf+ZFdTxenHSSGS4ZT85Vbb+FzPVoOtfcFwYlSfC9IM4e2nw7xvnQZvWtILYseO6HE9Q==
   dependencies:
-    mongodb-memory-server-core "9.1.7"
+    mongodb-memory-server-core "9.1.8"
     tslib "^2.6.2"
 
 mongodb@6.3.0:
