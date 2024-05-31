@@ -5775,10 +5775,10 @@ mongodb-connection-string-url@^3.0.0:
     "@types/whatwg-url" "^11.0.2"
     whatwg-url "^13.0.0"
 
-mongodb-memory-server-core@9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-9.2.0.tgz#d83e52633df910d8a48c1ff27de139fd4ab7f2d9"
-  integrity sha512-9SWZEy+dGj5Fvm5RY/mtqHZKS64o4heDwReD4SsfR7+uNgtYo+JN41kPCcJeIH3aJf04j25i5Dia2s52KmsMPA==
+mongodb-memory-server-core@9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-9.3.0.tgz#ea622be2ec126aae994fefa92dcfe5a9c1a39dd0"
+  integrity sha512-8okAtOGWqSG37K7/TrvTfn43ORMh9LssIvd30XjHxvjWK7utmSTXr69XAhYvsDrHDwv7L23Ii6NJ4zMPpiFKuw==
   dependencies:
     async-mutex "^0.4.0"
     camelcase "^6.3.0"
@@ -5788,17 +5788,17 @@ mongodb-memory-server-core@9.2.0:
     https-proxy-agent "^7.0.4"
     mongodb "^5.9.1"
     new-find-package-json "^2.0.0"
-    semver "^7.6.0"
+    semver "^7.6.2"
     tar-stream "^3.1.7"
     tslib "^2.6.2"
     yauzl "^3.1.3"
 
-mongodb-memory-server@9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-9.2.0.tgz#9fe8a0128f5b7409041895ce9e56ed28b2cf337d"
-  integrity sha512-w/usKdYtby5EALERxmA0+et+D0brP0InH3a26shNDgGefXA61hgl6U0P3IfwqZlEGRZdkbZig3n57AHZgDiwvg==
+mongodb-memory-server@9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-9.3.0.tgz#38712a445a7d0f54a8463d4be21bc7be731d5d23"
+  integrity sha512-ag1vbjsm1A2C/1arRlfCLRapY7L2JKsQgASvaFyTXFyfqf6wjVSfO3PhJ/KfkyntmwlMXe3sUjMkZKeD89qu8Q==
   dependencies:
-    mongodb-memory-server-core "9.2.0"
+    mongodb-memory-server-core "9.3.0"
     tslib "^2.6.2"
 
 mongodb@6.6.2:
@@ -6751,12 +6751,17 @@ semver@^6.0.0, semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.2, semver@^7.3.5, semver@^7.3.8, semver@^7.6.0:
+semver@^7.3.2, semver@^7.3.5, semver@^7.3.8:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
   integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
   dependencies:
     lru-cache "^6.0.0"
+
+semver@^7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.2.tgz#1e3b34759f896e8f14d6134732ce798aeb0c6e13"
+  integrity sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==
 
 send@0.18.0:
   version "0.18.0"
