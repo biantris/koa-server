@@ -14,7 +14,7 @@
     "dotenv-safe": "^9.1.0",
     "esbuild": "^0.21.4",
     "get-graphql-schema": "^2.1.2",
-    "graphql": "^16.8.1",
+    "graphql": "^16.8.2",
     "graphql-helix": "^1.13.0",
     "graphql-playground-middleware-koa": "^1.6.22",
     "graphql-relay": "^ 0.10.1",
