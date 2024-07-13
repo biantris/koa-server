@@ -4188,10 +4188,10 @@ graphql-playground-middleware-koa@^1.6.22:
   dependencies:
     graphql-playground-html "^1.6.30"
 
-"graphql-relay@^ 0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.10.1.tgz#4729ec92b5cf73879cf76d817ddbee7808d1cec9"
-  integrity sha512-8AtwSe6B0/b4+YzynHr38PP7S+zX5Vs5LEo0BEzGCPq/THAiHa5H5ZLf3bRbKbok15ADxDQSsGJmlqXeJDDPIw==
+"graphql-relay@^ 0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.10.2.tgz#a1cd0e4b63e671a08da6c021ec033086a4887f6a"
+  integrity sha512-abybva1hmlNt7Y9pMpAzHuFnM2Mme/a2Usd8S4X27fNteLGRAECMYfhmsrpZFvGn3BhmBZugMXYW/Mesv3P1Kw==
 
 graphql@^14.0.2:
   version "14.7.0"
