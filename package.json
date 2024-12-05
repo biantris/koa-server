@@ -9,7 +9,7 @@
     "@types/jest": "^27.5.1",
     "@types/supertest": "^6.0.0",
     "babel-node": "^0.0.1-security",
-    "dataloader": "^2.2.2",
+    "dataloader": "^2.2.3",
     "dotenv": "^16.4.7",
     "dotenv-safe": "^9.1.0",
     "esbuild": "^0.21.5",
